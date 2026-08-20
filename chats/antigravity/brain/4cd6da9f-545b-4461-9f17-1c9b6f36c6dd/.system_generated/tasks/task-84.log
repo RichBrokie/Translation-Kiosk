@@ -1,0 +1,40 @@
+
+2026-08-08 00:03:08 INFO: Starting Backup of VM 101 (lxc)
+2026-08-08 00:03:08 INFO: status = running
+2026-08-08 00:03:08 INFO: CT Name: casaos
+2026-08-08 00:03:08 INFO: including mount point rootfs ('/') in backup
+2026-08-08 00:03:08 INFO: backup mode: snapshot
+2026-08-08 00:03:08 INFO: ionice priority: 7
+2026-08-08 00:03:08 INFO: create storage snapshot 'vzdump'
+2026-08-08 00:03:09 INFO: creating vzdump archive '/var/lib/vz/dump/vzdump-lxc-1
+01-2026_08_08-00_03_08.tar.zst'
+2026-08-08 00:05:25 INFO: Total bytes written: 5708769280 (5.4GiB, 41MiB/s)
+2026-08-08 00:05:25 INFO: archive file size: 1.90GB
+2026-08-08 00:05:25 INFO: adding notes to backup
+2026-08-08 00:05:25 INFO: prune older backups with retention: keep-last=3
+2026-08-08 00:05:25 INFO: removing backup 'local:backup/vzdump-lxc-101-2026_08_0
+5-00_05_21.tar.zst'
+2026-08-08 00:05:25 INFO: pruned 1 backup(s) not covered by keep-retention polic
+y
+2026-08-08 00:05:25 INFO: cleanup temporary 'vzdump' snapshot
+2026-08-08 00:05:26 INFO: Finished Backup of VM 101 (00:02:18)
+---
+2026-08-08 00:05:26 INFO: Starting Backup of VM 102 (lxc)
+2026-08-08 00:05:26 INFO: status = running
+2026-08-08 00:05:26 INFO: CT Name: cloudflared
+2026-08-08 00:05:26 INFO: including mount point rootfs ('/') in backup
+2026-08-08 00:05:26 INFO: backup mode: snapshot
+2026-08-08 00:05:26 INFO: ionice priority: 7
+2026-08-08 00:05:26 INFO: create storage snapshot 'vzdump'
+2026-08-08 00:05:26 INFO: creating vzdump archive '/var/lib/vz/dump/vzdump-lxc-1
+02-2026_08_08-00_05_26.tar.zst'
+2026-08-08 00:05:55 INFO: Total bytes written: 1015961600 (969MiB, 34MiB/s)
+2026-08-08 00:05:55 INFO: archive file size: 266MB
+2026-08-08 00:05:55 INFO: adding notes to backup
+2026-08-08 00:05:55 INFO: prune older backups with retention: keep-last=3
+2026-08-08 00:05:56 INFO: removing backup 'local:backup/vzdump-lxc-102-2026_08_0
+5-00_09_04.tar.zst'
+2026-08-08 00:05:56 INFO: pruned 1 backup(s) not covered by keep-retention polic
+y
+2026-08-08 00:05:56 INFO: cleanup temporary 'vzdump' snapshot
+2026-08-08 00:05:56 INFO: Finished Backup of VM 102 (00:00:30)

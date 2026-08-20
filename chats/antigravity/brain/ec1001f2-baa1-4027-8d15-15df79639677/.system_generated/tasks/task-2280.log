@@ -1,0 +1,48 @@
+============================================================
+STEP 1: Stop and remove voice add-ons
+============================================================
+  Stopping app_core_whisper...
+    stop: app_core_whisper
+    rm: app_core_whisper
+  Stopping app_core_piper...
+    stop: app_core_piper
+    rm: app_core_piper
+  Stopping app_core_openwakeword...
+    stop: app_core_openwakeword
+    rm: Error response from daemon: No such container: app_core_openwakeword
+  Stopping app_core_speech-to-phrase...
+    stop: app_core_speech-to-phrase
+    rm: app_core_speech-to-phrase
+
+============================================================
+STEP 2: Remove Wyoming integration entries + Focused pipeline
+============================================================
+  Removed 3 Wyoming integration entries
+  Written config_entries
+  Removed 1 orphan pipeline(s)
+  Written pipeline config
+
+============================================================
+STEP 3: Remove leftover Frigate files & Wyoming cache
+============================================================
+  Removed Wyoming brands cache
+
+============================================================
+STEP 4: Remove deprecated googlewifi custom component
+============================================================
+  Removed googlewifi custom component folder
+  No googlewifi config entry found (already clean)
+
+============================================================
+STEP 5: Fix template errors in configuration.yaml
+============================================================
+  Fixed template sensors (unknown -> unavailable)
+============================================================
+STEP 6: Restart Home Assistant
+============================================================
+  Restarting...
+  Home Assistant is restarting!
+
+============================================================
+ALL DONE! Optimization complete.
+============================================================

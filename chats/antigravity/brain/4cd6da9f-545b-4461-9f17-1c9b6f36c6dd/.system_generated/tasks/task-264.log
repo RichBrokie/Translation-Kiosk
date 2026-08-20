@@ -1,0 +1,29 @@
+
+Aug 08 06:27:29 proxmox postfix[204336]: postfix/postlog: stopping the Postfix m
+ail system
+Aug 08 06:27:29 proxmox postfix/postfix-script[204336]: stopping the Postfix mai
+l system
+Aug 08 06:27:29 proxmox postfix/master[1079]: terminating on signal 15
+Aug 08 06:27:29 proxmox systemd[1]: postfix.service: Deactivated successfully.
+Aug 08 06:27:29 proxmox systemd[1]: Stopped postfix.service - Postfix Mail Trans
+port Agent (main/default instance).
+Aug 08 06:27:29 proxmox systemd[1]: postfix.service: Consumed 1.356s CPU time, 1
+9.5M memory peak, 1.6M memory swap peak.
+Aug 08 06:27:29 proxmox systemd[1]: Starting postfix.service - Postfix Mail Tran
+sport Agent (main/default instance)...
+Aug 08 06:27:30 proxmox postfix[204396]: updating /etc/resolv.conf => /var/spool
+/postfix//etc/resolv.conf
+Aug 08 06:27:30 proxmox postfix/master[204453]: daemon started -- version 3.10.5
+, configuration /etc/postfix
+Aug 08 06:27:30 proxmox systemd[1]: Started postfix.service - Postfix Mail Trans
+port Agent (main/default instance).
+Aug 08 06:27:32 proxmox postfix/pickup[204454]: 411BA242F7F: uid=0 from=<root>
+Aug 08 06:27:32 proxmox postfix/cleanup[204467]: 411BA242F7F: message-id=<202608
+08012732.411BA242F7F@proxmox.hp>
+Aug 08 06:27:32 proxmox postfix/qmgr[204455]: 411BA242F7F: from=<ahmad@creativef
+actory.pk>, size=340, nrcpt=1 (queue active)
+Aug 08 06:28:02 proxmox postfix/smtp[204470]: connect to smtp.zoho.com[136.143.1
+82.56]:587: Connection timed out
+Aug 08 06:28:02 proxmox postfix/smtp[204470]: 411BA242F7F: to=<29100095@lums.edu
+.pk>, relay=none, delay=30, delays=0.04/0.05/30/0, dsn=4.4.1, status=deferred (c
+onnect to smtp.zoho.com[136.143.182.56]:587: Connection timed out)

@@ -1,0 +1,24 @@
+Restarted satellite: wyoming-wyze-camera
+SATELLITE:     await self._waiter
+  File "/usr/local/lib/python3.11/asyncio/selector_events.py", line 999, in _rea
+d_ready__data_received
+    data = self._sock.recv(self.max_size)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+INFO:root:Streaming audio
+WARNING:root:Event(type='error', data={'text': 'No speech-to-text provider for:
+stt.google_ai_stt', 'code': 'stt-provider-missing'}, payload=None)
+INFO:root:Ready
+INFO:root:Connected to services
+INFO:root:Streaming audio
+Exception ignored in: <function BufferedFile.__del__ at 0x7020be7d2b60>
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/paramiko/file.py", line 66, in __del__
+  File "/usr/lib/python3/dist-packages/paramiko/channel.py", line 1392, in close
+  File "/usr/lib/python3/dist-packages/paramiko/channel.py", line 991, in shutdo
+wn_write
+  File "/usr/lib/python3/dist-packages/paramiko/channel.py", line 967, in shutdo
+wn
+  File "/usr/lib/python3/dist-packages/paramiko/transport.py", line 1931, in _se
+nd_user_message
+AttributeError: 'NoneType' object has no attribute 'time'

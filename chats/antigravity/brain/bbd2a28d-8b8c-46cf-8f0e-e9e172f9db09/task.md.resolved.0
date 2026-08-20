@@ -1,0 +1,8 @@
+# Weylus Setup Tasks
+
+- [ ] Download and install Weylus to `~/.local/bin/weylus`
+- [ ] Create `uinput` group and add the user to it
+- [ ] Add `udev` rules for `uinput`
+- [ ] Reload `udev` rules
+- [ ] Verify Weylus installation
+- [ ] Create walkthrough documentation for the user on how to create the virtual monitor

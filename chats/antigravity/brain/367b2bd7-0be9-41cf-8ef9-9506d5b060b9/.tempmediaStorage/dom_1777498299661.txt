@@ -1,0 +1,30 @@
+Cloudflare WARP works great on Windows and macOS, but on Linux it only ships with a CLI.
+I wanted the same one-click toggle experience — so I built a lightweight GUI with
+Zenity
+and
+passwordless sudo
+.
+🧩 Why
+WARP isn’t just a DNS changer — it’s a lightweight VPN that routes traffic through Cloudflare’s network for privacy and faster access.
+But on Linux, there’s no official GUI. I wanted a small toggle that could switch between:
+🟢
+WARP (VPN)
+🔵
+1.1.1.1 (DoH)
+🔴
+OFF
+⚙️ Installing Cloudflare WARP
+For Ubuntu/Debian systems:
+[0] (500,923)<pre class='pu pv pw px py pz qa qb bl qc ax bg' scrollable='true'>curl -fsSL https://pkg.cloudflareclient.com/pubkey.gpg | sudo gpg --dearmor -o /usr/share/keyrings/cloudflare-warp-archive-keyring.gpg
+sudo apt update
+sudo apt install cloudflare-warp -y
+sudo systemctl
+--now warp-svc />
+	curl -fsSL https://pkg.cloudflareclient.com/pubkey.gpg | sudo gpg --dearmor -o /usr/share/keyrings/cloudflare-warp-archive-keyring.gpg
+	echo
+	"deb [signed-by=/usr/share/keyrings/cloudflare-warp-archive-keyring.gpg] https://pkg.cloudflareclient.com/ noble main"
+	sudo apt update
+	sudo apt install cloudflare-warp -y
+	sudo systemctl
+	enable
+	--now warp-svc

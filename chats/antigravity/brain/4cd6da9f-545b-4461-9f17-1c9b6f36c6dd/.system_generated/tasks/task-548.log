@@ -1,0 +1,5 @@
+
+dpkg: error: dpkg frontend lock was locked by /usr/bin/apt process with pid 2200
+44
+Note: removing the lock file is always wrong, can damage the locked area
+and the entire system. See <https://wiki.debian.org/Teams/Dpkg/FAQ#db-lock>.

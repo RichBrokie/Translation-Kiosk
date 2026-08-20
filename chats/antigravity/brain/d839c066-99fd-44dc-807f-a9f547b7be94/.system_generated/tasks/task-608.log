@@ -1,0 +1,2 @@
+cat: /config/.storage/auth: No such file or directory
+401: Unauthorized

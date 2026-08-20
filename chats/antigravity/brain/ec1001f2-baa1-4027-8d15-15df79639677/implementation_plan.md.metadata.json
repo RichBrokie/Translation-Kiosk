@@ -1,0 +1,6 @@
+{
+  "summary": "Comprehensive Home Assistant optimization plan covering: removal of 4 unused voice add-ons (~1GB RAM savings), cleanup of leftover Frigate files, fixing 3 template errors in logs, removing deprecated googlewifi component, cleaning up duplicate go2rtc streams, and removing an orphaned voice pipeline. Includes before/after metrics table.",
+  "updatedAt": "2026-08-02T18:24:59.263492843Z",
+  "requestFeedback": true,
+  "userFacing": true
+}

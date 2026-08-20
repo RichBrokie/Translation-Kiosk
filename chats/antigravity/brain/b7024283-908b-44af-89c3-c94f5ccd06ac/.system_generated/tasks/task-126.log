@@ -1,0 +1,25 @@
+--- Cleaning up Host ---
+Running: systemctl stop model-download.service || true
+Running: systemctl disable model-download.service || true
+ERR:
+Removed '/etc/systemd/system/multi-user.target.wants/model-download.service'.
+
+Running: rm /etc/systemd/system/model-download.service || true
+Running: systemctl daemon-reload
+Running: rm /opt/download.sh || true
+--- Setting up NAT Bridge (vmbr1) ---
+Running: ip link add name vmbr1 type bridge || true
+Running: ip addr add 10.10.10.1/24 dev vmbr1 || true
+Running: ip link set dev vmbr1 up || true
+Running: sysctl -w net.ipv4.ip_forward=1
+OUT:
+net.ipv4.ip_forward = 1
+
+Running: iptables -t nat -A POSTROUTING -s 10.10.10.0/24 -o vmbr0 -j MASQUERADE
+|| true
+--- Configuring LXC Network ---
+Running: pct stop 107
+Running: pct set 107 --net0 name=eth0,bridge=vmbr1,ip=10.10.10.2/24,gw=10.10.10.
+1
+Running: pct set 107 --nameserver 8.8.8.8
+Running: pct start 107

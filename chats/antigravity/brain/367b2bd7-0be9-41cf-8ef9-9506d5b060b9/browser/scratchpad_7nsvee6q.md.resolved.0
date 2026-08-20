@@ -1,0 +1,11 @@
+# Plan for Extracting Cloudflare WARP GUI Toggle Instructions
+
+- [ ] Read the Medium article and extract full text.
+- [ ] Identify and extract all bash scripts.
+- [ ] Identify and extract .desktop file contents.
+- [ ] List all file paths mentioned.
+- [ ] Summarize the setup instructions.
+- [ ] Provide the final extracted information to the user.
+
+## Findings
+- URL: https://medium.com/@Alcaron/how-i-built-a-cloudflare-warp-gui-toggle-on-linux-wayland-friendly-568f299956ca

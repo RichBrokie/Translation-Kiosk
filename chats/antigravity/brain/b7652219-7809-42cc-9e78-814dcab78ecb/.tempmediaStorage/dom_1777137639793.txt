@@ -1,0 +1,94 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (262,178)<a class='hds-card-gallery hds-card margin-bottom-4 desktop:margin-bottom-5 mobile:grid-col-12 tablet:grid-col-6 desktop:grid-col-3 margin-bottom-6' href='https://www.nasa.gov/gallery/journey-to-the-moon/' />
+	[1] (262,178)<div  />
+		[2] (262,147)<div  />
+			[3] (178,147)<figure  />
+				[4] (178,147)<img  />
+			[5] (407,91)<figure  />
+				[6] (407,91)<img  />
+			[7] (407,203)<figure  />
+				[8] (407,203)<img  />
+		[9] (262,296)<div  />
+			[10] (262,282)<div  />
+				[11] (262,282)<h3 >Artemis II Journey to the Moon Gallery />
+			[12] (262,312)<div  />
+				[13] (87,312)<div >42 Images />
+				[14] (212,312)<div >16 Videos />
+[15] (738,178)<a class='hds-card-gallery hds-card margin-bottom-4 desktop:margin-bottom-5 mobile:grid-col-12 tablet:grid-col-6 desktop:grid-col-3 margin-bottom-6' href='https://www.nasa.gov/gallery/artemis-ii-launch/' />
+	[16] (738,178)<div  />
+		[17] (738,147)<div  />
+			[18] (654,147)<figure  />
+				[19] (654,147)<img  />
+			[20] (884,91)<figure  />
+				[21] (884,91)<img  />
+			[22] (884,203)<figure  />
+				[23] (884,203)<img  />
+		[24] (738,296)<div  />
+			[25] (738,282)<div  />
+				[26] (738,282)<h3 >Artemis II Launch Gallery />
+			[27] (738,312)<div  />
+				[28] (564,312)<div >27 Images />
+				[29] (683,312)<div >1 Videos />
+[30] (262,512)<a class='hds-card-gallery hds-card margin-bottom-4 desktop:margin-bottom-5 mobile:grid-col-12 tablet:grid-col-6 desktop:grid-col-3 margin-bottom-6' href='https://www.nasa.gov/gallery/artemis-ii-astronauts/' />
+	[31] (262,512)<div  />
+		[32] (262,481)<div  />
+			[33] (178,481)<figure  />
+				[34] (178,481)<img  />
+			[35] (407,425)<figure  />
+				[36] (407,425)<img  />
+			[37] (407,537)<figure  />
+				[38] (407,537)<img  />
+		[39] (262,630)<div  />
+			[40] (262,616)<div  />
+				[41] (262,616)<h3 >Artemis II Astronauts Gallery />
+			[42] (262,646)<div  />
+				[43] (93,646)<div >113 Images />
+[44] (738,512)<a class='hds-card-gallery hds-card margin-bottom-4 desktop:margin-bottom-5 mobile:grid-col-12 tablet:grid-col-6 desktop:grid-col-3 margin-bottom-6' href='https://www.nasa.gov/gallery/artemis-ii-flight-day-highlights/' />
+	[45] (738,512)<div  />
+		[46] (738,481)<div  />
+			[47] (654,481)<figure  />
+				[48] (654,481)<img  />
+			[49] (884,425)<figure  />
+				[50] (884,425)<img  />
+			[51] (884,537)<figure  />
+				[52] (884,537)<img  />
+		[53] (738,630)<div  />
+			[54] (738,616)<div  />
+				[55] (738,616)<h3 >Artemis II Flight Day Highlights Gallery />
+			[56] (738,646)<div  />
+				[57] (559,646)<div >9 Images />
+				[58] (677,646)<div >10 Videos />
+[59] (262,846)<a class='hds-card-gallery hds-card margin-bottom-4 desktop:margin-bottom-5 mobile:grid-col-12 tablet:grid-col-6 desktop:grid-col-3 margin-bottom-6' href='https://www.nasa.gov/gallery/artemis-ii-mission-science/' />
+	[60] (262,846)<div  />
+		[61] (262,815)<div  />
+			[62] (178,815)<figure  />
+				[63] (178,815)<img  />
+			[64] (407,759)<figure  />
+				[65] (407,759)<img  />
+			[66] (407,871)<figure  />
+				[67] (407,871)<img  />
+		[68] (262,964)<div  />
+			[69] (262,950)<div  />
+				[70] (262,950)<h3 >Artemis II Mission Science Gallery />
+			[71] (262,980)<div  />
+				[72] (87,980)<div >31 Images />
+				[73] (206,980)<div >6 Videos />
+[74] (738,846)<a class='hds-card-gallery hds-card margin-bottom-4 desktop:margin-bottom-5 mobile:grid-col-12 tablet:grid-col-6 desktop:grid-col-3 margin-bottom-6' href='https://www.nasa.gov/gallery/nasas-space-launch-system-rocket/' />
+	[75] (738,846)<div  />
+		[76] (738,815)<div  />
+			[77] (654,815)<figure  />
+				[78] (654,815)<img  />
+			[79] (884,759)<figure  />
+				[80] (884,759)<img  />
+			[81] (884,871)<figure  />
+				[82] (884,871)<img  />
+		[83] (738,964)<div  />
+			[84] (738,950)<div  />
+				[85] (738,950)<h3 >NASA’s Space Launch System Rocket Gallery />
+			[86] (738,980)<div  />
+				[87] (570,980)<div >100 Images />
+
+</current_dom>

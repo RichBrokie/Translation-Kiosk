@@ -1,0 +1,5 @@
+{
+  "summary": "Security audit report for the Proxmox server detailing firewall, SSH, exposed ports, and updates.",
+  "updatedAt": "2026-08-08T01:51:16.965867510Z",
+  "userFacing": true
+}

@@ -1,0 +1,90 @@
+
+Aug 08 06:05:51 proxmox postfix/pickup[188881]: 6398A242DB2: uid=0 from=<root>
+Aug 08 06:05:51 proxmox postfix/cleanup[194190]: 6398A242DB2: message-id=<202608
+08010551.6398A242DB2@proxmox.hp>
+Aug 08 06:05:51 proxmox postfix/qmgr[1081]: 6398A242DB2: from=<root@proxmox.hp>,
+ size=370, nrcpt=1 (queue active)
+Aug 08 06:05:53 proxmox postfix/smtp[194192]: 6398A242DB2: to=<29100095@lums.edu
+.pk>, relay=lums-edu-pk.mail.protection.outlook.com[52.101.68.18]:25, delay=1.7,
+ delays=0.04/0.03/1.2/0.48, dsn=5.7.1, status=bounced (host lums-edu-pk.mail.pro
+tection.outlook.com[52.101.68.18] said: 550 5.7.1 Service unavailable, Client ho
+st [154.57.194.26] blocked using Spamhaus. To request removal from this list see
+ https://www.spamhaus.org/query/ip/154.57.194.26 AS(1440) [DB5PEPF00014B9B.eurpr
+d02.prod.outlook.com 2026-08-08T01:05:52.708Z 08DEF34C4F790138] (in reply to RCP
+T TO command))
+Aug 08 06:05:53 proxmox postfix/cleanup[194190]: 4F7FB242DB4: message-id=<202608
+08010553.4F7FB242DB4@proxmox.hp>
+Aug 08 06:05:53 proxmox postfix/bounce[194207]: 6398A242DB2: sender non-delivery
+ notification: 4F7FB242DB4
+Aug 08 06:05:53 proxmox postfix/qmgr[1081]: 4F7FB242DB4: from=<>, size=2857, nrc
+pt=1 (queue active)
+Aug 08 06:05:53 proxmox postfix/qmgr[1081]: 6398A242DB2: removed
+Aug 08 06:05:53 proxmox postfix/pickup[188881]: 6666D242DB3: uid=65534 from=<roo
+t>
+Aug 08 06:05:53 proxmox proxmox-mail-forward[194218]: notified via target `mail-
+to-root`
+Aug 08 06:05:53 proxmox postfix/cleanup[194190]: 6666D242DB3: message-id=<202608
+08010553.4F7FB242DB4@proxmox.hp>
+Aug 08 06:05:53 proxmox postfix/local[194217]: 4F7FB242DB4: to=<root@proxmox.hp>
+, relay=local, delay=0.1, delays=0.01/0.02/0/0.07, dsn=2.0.0, status=sent (deliv
+ered to command: /usr/libexec/proxmox-mail-forward)
+Aug 08 06:05:53 proxmox postfix/qmgr[1081]: 4F7FB242DB4: removed
+Aug 08 06:05:53 proxmox postfix/qmgr[1081]: 6666D242DB3: from=<root@proxmox.hp>,
+ size=3030, nrcpt=1 (queue active)
+Aug 08 06:05:53 proxmox postfix/smtp[194192]: connect to gmail-smtp-in.l.google.
+com[2404:6800:4000:1025::1a]:25: Network is unreachable
+Aug 08 06:06:23 proxmox postfix/smtp[194192]: connect to gmail-smtp-in.l.google.
+com[192.178.211.26]:25: Connection timed out
+Aug 08 06:06:26 proxmox postfix/smtp[194192]: 6666D242DB3: to=<am526315@gmail.co
+m>, relay=alt1.gmail-smtp-in.l.google.com[173.194.41.26]:25, delay=33, delays=0.
+01/0/32/1.2, dsn=5.7.1, status=bounced (host alt1.gmail-smtp-in.l.google.com[173
+.194.41.26] said: 550-5.7.1 [154.57.194.26] The IP you're using to send mail is
+not authorized to 550-5.7.1 send email directly to our servers. Please use the S
+MTP relay at your 550-5.7.1 service provider instead. For more information, go t
+o 550 5.7.1  https://support.google.com/mail/?p=NotAuthorizedError 41be03b00d2f7
+-cbe8f41c660si5199449a12.355 - gsmtp (in reply to end of DATA command))
+Aug 08 06:06:26 proxmox postfix/qmgr[1081]: 6666D242DB3: removed
+Aug 08 06:06:26 proxmox postfix/cleanup[194190]: 9E5D7242DC0: message-id=<202608
+08010626.9E5D7242DC0@proxmox.hp>
+Aug 08 06:06:26 proxmox postfix/cleanup[194190]: 9E5D7242DC0: removed (canceled)
+---
+● postfix.service - Postfix Mail Transport Agent (main/default instance)
+     Loaded: loaded (/usr/lib/systemd/system/postfix.service; enabled; preset: e
+nabled)
+     Active: active (running) since Fri 2026-08-07 23:16:58 PKT; 6h ago
+ Invocation: c44e3cd6647645d3afc3b6db011ef471
+       Docs: man:postfix(1)
+   Main PID: 1079 (master)
+      Tasks: 3 (limit: 7757)
+     Memory: 10.5M (peak: 19.5M, swap: 1.4M, swap peak: 1.6M)
+        CPU: 1.204s
+     CGroup: /system.slice/postfix.service
+             ├─  1079 /usr/lib/postfix/sbin/master -w
+             ├─  1081 qmgr -l -t unix -u
+             └─188881 pickup -l -t unix -u -c
+
+Aug 08 06:05:53 proxmox postfix/cleanup[194190]: 6666D242DB3: message-id=<202608
+08010553.4F7FB242DB4@proxmox.hp>
+Aug 08 06:05:53 proxmox postfix/local[194217]: 4F7FB242DB4: to=<root@proxmox.hp>
+, relay=local, delay=0.1, delays=0.01/0.02/0/0.07, dsn=2.0.0, status=sent (deliv
+ere
+ered to command: /usr/libexec/proxmox-mail-forward)
+Aug 08 06:05:53 proxmox postfix/qmgr[1081]: 4F7FB242DB4: removed
+Aug 08 06:05:53 proxmox postfix/qmgr[1081]: 6666D242DB3: from=<root@proxmox.hp>,
+ size=3030, nrcpt=1 (queue active)
+Aug 08 06:05:53 proxmox postfix/smtp[194192]: connect to gmail-smtp-in.l.google.
+com[2404:6800:4000:1025::1a]:25: Network is unreachable
+Aug 08 06:06:23 proxmox postfix/smtp[194192]: connect to gmail-smtp-in.l.google.
+com[192.178.211.26]:25: Connection timed out
+Aug 08 06:06:26 proxmox postfix/smtp[194192]: 6666D242DB3: to=<am526315@gmail.co
+m>, relay=alt1.gmail-smtp-in.l.google.com[173.194.41.26]:25, delay=33, delays=0.
+01/0/32/1.2, dsn=5.7.1, status=bounced (host alt1.gmail-smtp-in.l.google.com[173
+.194.41.26] said: 550-5.7.1 [154.57.194.26] The IP you're using to send mail is
+not authorized to 550-5.7.1 send email directly to our servers. Please use the S
+MTP relay at your 550-5.7.1 service provider instead. For more information, go t
+o 550 5.7.1  https://support.google.com/mail/?p=NotAuthorizedError 41be03b00d2f7
+-cbe8f41c660si5199449a12.355 - gsmtp (in reply to end of DATA command))
+Aug 08 06:06:26 proxmox postfix/qmgr[1081]: 6666D242DB3: removed
+Aug 08 06:06:26 proxmox postfix/cleanup[194190]: 9E5D7242DC0: message-id=<202608
+08010626.9E5D7242DC0@proxmox.hp>
+Aug 08 06:06:26 proxmox postfix/cleanup[194190]: 9E5D7242DC0: removed (canceled)

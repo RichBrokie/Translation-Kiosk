@@ -1,0 +1,8 @@
+- [x] Install prerequisites (`curl`, `ca-certificates`, `lzip`, `sqlite3`, `python3-venv`)
+- [x] Add Waydroid repository
+- [x] Install Waydroid package
+- [x] Initialize Waydroid with GAPPS
+- [x] Clone and set up `waydroid_script`
+- [x] Install ARM translation (`libhoudini`) via `waydroid_script`
+- [x] Start Waydroid service and session
+- [ ] Retrieve Google Play device ID for certification

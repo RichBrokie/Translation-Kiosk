@@ -1,0 +1,180 @@
+============================================================
+ COMMAND: Mount status (mount | grep -E 'lums|cloud' || echo 'No lums-cloud mount')
+============================================================
+No lums-cloud mount
+
+
+
+============================================================
+ COMMAND: Size of /mnt directories (du -xhd 2 /mnt | sort -h)
+============================================================
+4.0K	/mnt/vzsnap0
+7.0G	/mnt
+7.0G	/mnt/lums-cloud
+7.0G	/mnt/lums-cloud/dump
+
+
+
+============================================================
+ COMMAND: Files in /mnt/lums-cloud/dump (ls -lhR /mnt/lums-cloud/dump/ 2>/dev/null || echo 'No lums-cloud dump')
+============================================================
+/mnt/lums-cloud/dump/:
+total 7.0G
+-rw-r--r-- 1 root   root    904 Apr 18 04:55 vzdump-lxc-101-2026_04_18-04_55_06.log
+-rw-r--r-- 1 root   root   1.4G Apr 18 04:55 vzdump-lxc-101-2026_04_18-04_55_06.tar.zst
+-rw-r--r-- 1 root   root      6 Apr 18 04:55 vzdump-lxc-101-2026_04_18-04_55_06.tar.zst.notes
+-rw-r--r-- 1 root   root    903 May 31 01:14 vzdump-lxc-101-2026_05_31-01_11_18.log
+-rw-r--r-- 1 root   root   1.4G May 31 01:13 vzdump-lxc-101-2026_05_31-01_11_18.tar.zst
+-rw-r--r-- 1 root   root      6 May 31 01:13 vzdump-lxc-101-2026_05_31-01_11_18.tar.zst.notes
+-rw-r--r-- 1 root   root    907 Apr 18 04:55 vzdump-lxc-102-2026_04_18-04_55_41.log
+-rw-r--r-- 1 root   root   250M Apr 18 04:55 vzdump-lxc-102-2026_04_18-04_55_41.tar.zst
+-rw-r--r-- 1 root   root     11 Apr 18 04:55 vzdump-lxc-102-2026_04_18-04_55_41.tar.zst.notes
+-rw-r--r-- 1 root   root    906 May 31 01:14 vzdump-lxc-102-2026_05_31-01_14_00.log
+-rw-r--r-- 1 root   root   262M May 31 01:14 vzdump-lxc-102-2026_05_31-01_14_00.tar.zst
+-rw-r--r-- 1 root   root     11 May 31 01:14 vzdump-lxc-102-2026_05_31-01_14_00.tar.zst.notes
+-rwxrwxrwx 1 100000 100000  783 Apr 18 04:43 vzdump-lxc-103-2026_04_18-04_42_56.log
+-rwxrwxrwx 1 100000 100000 206M Apr 18 04:43 vzdump-lxc-103-2026_04_18-04_42_56.tar.zst
+-rwxrwxrwx 1 100000 100000    7 Apr 18 04:43 vzdump-lxc-103-2026_04_18-04_42_56.tar.zst.notes
+-rw-r--r-- 1 root   root    902 Apr 18 04:56 vzdump-lxc-103-2026_04_18-04_55_51.log
+-rw-r--r-- 1 root   root   206M Apr 18 04:56 vzdump-lxc-103-2026_04_18-04_55_51.tar.zst
+-rw-r--r-- 1 root   root      7 Apr 18 04:56 vzdump-lxc-103-2026_04_18-04_55_51.tar.zst.notes
+-rw-r--r-- 1 root   root    902 May 31 01:15 vzdump-lxc-103-2026_05_31-01_14_41.log
+-rw-r--r-- 1 root   root   207M May 31 01:15 vzdump-lxc-103-2026_05_31-01_14_41.tar.zst
+-rw-r--r-- 1 root   root      7 May 31 01:15 vzdump-lxc-103-2026_05_31-01_14_41.tar.zst.notes
+-rw-r--r-- 1 root   root   3.4K Apr 18 04:55 vzdump-qemu-100-2026_04_18-04_53_58.log
+-rw-r--r-- 1 root   root   3.2G Apr 18 04:55 vzdump-qemu-100-2026_04_18-04_53_58.vma.zst
+-rw-r--r-- 1 root   root      9 Apr 18 04:55 vzdump-qemu-100-2026_04_18-04_53_58.vma.zst.notes
+-rw-r--r-- 1 root   root   9.8K May 31 01:11 vzdump-qemu-100-2026_05_31-01_00_03.log
+-rw-r--r-- 1 100000 100100    0 May 31 01:08 vzdump-qemu-100-2026_05_31-01_00_03.vma.dat.partial
+
+
+
+============================================================
+ COMMAND: Files in /var/lib/vz/dump (ls -lh /var/lib/vz/dump)
+============================================================
+total 41G
+-rw-r--r-- 1 root root 1.2K Feb  5 21:42 vzdump-lxc-101-2026_02_05-21_41_08.log
+-rw-r--r-- 1 root root 1.4G Feb  5 21:42 vzdump-lxc-101-2026_02_05-21_41_08.tar.zst
+-rw-r--r-- 1 root root  945 Apr 18 12:01 vzdump-lxc-101-2026_04_18-12_01_21.log
+-rw-r--r-- 1 root root 1.4G Apr 18 12:01 vzdump-lxc-101-2026_04_18-12_01_21.tar.zst
+-rw-r--r-- 1 root root    6 Apr 18 12:01 vzdump-lxc-101-2026_04_18-12_01_21.tar.zst.notes
+-rw-r--r-- 1 root root 1.1K May 27 12:02 vzdump-lxc-101-2026_05_27-12_01_40.log
+-rw-r--r-- 1 root root 1.4G May 27 12:02 vzdump-lxc-101-2026_05_27-12_01_40.tar.zst
+-rw-r--r-- 1 root root    6 May 27 12:02 vzdump-lxc-101-2026_05_27-12_01_40.tar.zst.notes
+-rw-r--r-- 1 root root 1.1K May 27 16:11 vzdump-lxc-101-2026_05_27-16_08_20.log
+-rw-r--r-- 1 root root 1.4G May 27 16:11 vzdump-lxc-101-2026_05_27-16_08_20.tar.zst
+-rw-r--r-- 1 root root    6 May 27 16:11 vzdump-lxc-101-2026_05_27-16_08_20.tar.zst.notes
+-rw-r--r-- 1 root root 1.1G May 27 20:11 vzdump-lxc-101-2026_05_27-20_08_36.tar.dat
+drwxr-xr-x 3 root root 4.0K May 27 20:08 vzdump-lxc-101-2026_05_27-20_08_36.tmp
+-rw-r--r-- 1 root root 1012 May 29 00:11 vzdump-lxc-101-2026_05_29-00_08_15.log
+-rw-r--r-- 1 root root 1.4G May 29 00:11 vzdump-lxc-101-2026_05_29-00_08_15.tar.zst
+-rw-r--r-- 1 root root    6 May 29 00:11 vzdump-lxc-101-2026_05_29-00_08_15.tar.zst.notes
+-rw-r--r-- 1 root root 1.1K May 29 04:08 vzdump-lxc-101-2026_05_29-04_06_36.log
+-rw-r--r-- 1 root root 1.4G May 29 04:08 vzdump-lxc-101-2026_05_29-04_06_36.tar.zst
+-rw-r--r-- 1 root root    6 May 29 04:08 vzdump-lxc-101-2026_05_29-04_06_36.tar.zst.notes
+-rw-r--r-- 1 root root 1.1K May 29 08:02 vzdump-lxc-101-2026_05_29-08_01_30.log
+-rw-r--r-- 1 root root 1.4G May 29 08:02 vzdump-lxc-101-2026_05_29-08_01_30.tar.zst
+-rw-r--r-- 1 root root    6 May 29 08:02 vzdump-lxc-101-2026_05_29-08_01_30.tar.zst.notes
+-rw-r--r-- 1 root root 1.1K May 31 00:11 vzdump-lxc-101-2026_05_31-00_08_12.log
+-rw-r--r-- 1 root root 1.4G May 31 00:11 vzdump-lxc-101-2026_05_31-00_08_12.tar.zst
+-rw-r--r-- 1 root root    6 May 31 00:11 vzdump-lxc-101-2026_05_31-00_08_12.tar.zst.notes
+-rw-r--r-- 1 root root  947 Apr 18 12:02 vzdump-lxc-102-2026_04_18-12_01_59.log
+-rw-r--r-- 1 root root 250M Apr 18 12:02 vzdump-lxc-102-2026_04_18-12_01_59.tar.zst
+-rw-r--r-- 1 root root   11 Apr 18 12:02 vzdump-lxc-102-2026_04_18-12_01_59.tar.zst.notes
+-rw-r--r-- 1 root root 1.1K May 27 12:02 vzdump-lxc-102-2026_05_27-12_02_14.log
+-rw-r--r-- 1 root root 265M May 27 12:02 vzdump-lxc-102-2026_05_27-12_02_14.tar.zst
+-rw-r--r-- 1 root root   11 May 27 12:02 vzdump-lxc-102-2026_05_27-12_02_14.tar.zst.notes
+-rw-r--r-- 1 root root 1.1K May 27 16:12 vzdump-lxc-102-2026_05_27-16_11_32.log
+-rw-r--r-- 1 root root 264M May 27 16:12 vzdump-lxc-102-2026_05_27-16_11_32.tar.zst
+-rw-r--r-- 1 root root   11 May 27 16:12 vzdump-lxc-102-2026_05_27-16_11_32.tar.zst.notes
+-rw-r--r-- 1 root root  947 May 29 00:12 vzdump-lxc-102-2026_05_29-00_11_14.log
+-rw-r--r-- 1 root root 262M May 29 00:12 vzdump-lxc-102-2026_05_29-00_11_14.tar.zst
+-rw-r--r-- 1 root root   11 May 29 00:12 vzdump-lxc-102-2026_05_29-00_11_14.tar.zst.notes
+-rw-r--r-- 1 root root 1.1K May 29 04:09 vzdump-lxc-102-2026_05_29-04_08_50.log
+-rw-r--r-- 1 root root 262M May 29 04:09 vzdump-lxc-102-2026_05_29-04_08_50.tar.zst
+-rw-r--r-- 1 root root   11 May 29 04:09 vzdump-lxc-102-2026_05_29-04_08_50.tar.zst.notes
+-rw-r--r-- 1 root root 1.1K May 29 08:02 vzdump-lxc-102-2026_05_29-08_02_03.log
+-rw-r--r-- 1 root root 262M May 29 08:02 vzdump-lxc-102-2026_05_29-08_02_03.tar.zst
+-rw-r--r-- 1 root root   11 May 29 08:02 vzdump-lxc-102-2026_05_29-08_02_03.tar.zst.notes
+-rw-r--r-- 1 root root 1.1K May 31 00:12 vzdump-lxc-102-2026_05_31-00_11_10.log
+-rw-r--r-- 1 root root 262M May 31 00:12 vzdump-lxc-102-2026_05_31-00_11_10.tar.zst
+-rw-r--r-- 1 root root   11 May 31 00:12 vzdump-lxc-102-2026_05_31-00_11_10.tar.zst.notes
+-rw-r--r-- 1 root root  943 Apr 18 12:02 vzdump-lxc-103-2026_04_18-12_02_11.log
+-rw-r--r-- 1 root root 206M Apr 18 12:02 vzdump-lxc-103-2026_04_18-12_02_11.tar.zst
+-rw-r--r-- 1 root root    7 Apr 18 12:02 vzdump-lxc-103-2026_04_18-12_02_11.tar.zst.notes
+-rw-r--r-- 1 root root 1.1K May 27 12:02 vzdump-lxc-103-2026_05_27-12_02_24.log
+-rw-r--r-- 1 root root 206M May 27 12:02 vzdump-lxc-103-2026_05_27-12_02_24.tar.zst
+-rw-r--r-- 1 root root    7 May 27 12:02 vzdump-lxc-103-2026_05_27-12_02_24.tar.zst.notes
+-rw-r--r-- 1 root root 1.1K May 27 16:13 vzdump-lxc-103-2026_05_27-16_12_31.log
+-rw-r--r-- 1 root root 206M May 27 16:13 vzdump-lxc-103-2026_05_27-16_12_31.tar.zst
+-rw-r--r-- 1 root root    7 May 27 16:13 vzdump-lxc-103-2026_05_27-16_12_31.tar.zst.notes
+-rw-r--r-- 1 root root  943 May 29 00:12 vzdump-lxc-103-2026_05_29-00_12_09.log
+-rw-r--r-- 1 root root 207M May 29 00:12 vzdump-lxc-103-2026_05_29-00_12_09.tar.zst
+-rw-r--r-- 1 root root    7 May 29 00:12 vzdump-lxc-103-2026_05_29-00_12_09.tar.zst.notes
+-rw-r--r-- 1 root root 1.1K May 29 04:10 vzdump-lxc-103-2026_05_29-04_09_31.log
+-rw-r--r-- 1 root root 207M May 29 04:10 vzdump-lxc-103-2026_05_29-04_09_31.tar.zst
+-rw-r--r-- 1 root root    7 May 29 04:10 vzdump-lxc-103-2026_05_29-04_09_31.tar.zst.notes
+-rw-r--r-- 1 root root 1.1K May 29 08:02 vzdump-lxc-103-2026_05_29-08_02_13.log
+-rw-r--r-- 1 root root 207M May 29 08:02 vzdump-lxc-103-2026_05_29-08_02_13.tar.zst
+-rw-r--r-- 1 root root    7 May 29 08:02 vzdump-lxc-103-2026_05_29-08_02_13.tar.zst.notes
+-rw-r--r-- 1 root root 1.1K May 31 00:12 vzdump-lxc-103-2026_05_31-00_12_06.log
+-rw-r--r-- 1 root root 207M May 31 00:12 vzdump-lxc-103-2026_05_31-00_12_06.tar.zst
+-rw-r--r-- 1 root root    7 May 31 00:12 vzdump-lxc-103-2026_05_31-00_12_06.tar.zst.notes
+-rw-r--r-- 1 root root 3.8K Apr 18 12:01 vzdump-qemu-100-2026_04_18-12_00_01.log
+-rw-r--r-- 1 root root 3.2G Apr 18 12:01 vzdump-qemu-100-2026_04_18-12_00_01.vma.zst
+-rw-r--r-- 1 root root    9 Apr 18 12:01 vzdump-qemu-100-2026_04_18-12_00_01.vma.zst.notes
+-rw-r--r-- 1 root root 8.8K May 27 16:08 vzdump-qemu-100-2026_05_27-16_00_01.log
+-rw-r--r-- 1 root root 3.4G May 27 16:08 vzdump-qemu-100-2026_05_27-16_00_01.vma.zst
+-rw-r--r-- 1 root root    9 May 27 16:08 vzdump-qemu-100-2026_05_27-16_00_01.vma.zst.notes
+-rw-r--r-- 1 root root 8.8K May 27 20:08 vzdump-qemu-100-2026_05_27-20_00_02.log
+-rw-r--r-- 1 root root 3.5G May 27 20:08 vzdump-qemu-100-2026_05_27-20_00_02.vma.zst
+-rw-r--r-- 1 root root    9 May 27 20:08 vzdump-qemu-100-2026_05_27-20_00_02.vma.zst.notes
+drwxr-xr-x 2 root root 4.0K May 28 20:00 vzdump-qemu-100-2026_05_28-20_00_02.tmp
+-rw-r--r-- 1 root root 1.1G May 28 20:01 vzdump-qemu-100-2026_05_28-20_00_02.vma.dat
+-rw-r--r-- 1 root root 9.0K May 29 00:08 vzdump-qemu-100-2026_05_29-00_00_01.log
+-rw-r--r-- 1 root root 3.5G May 29 00:08 vzdump-qemu-100-2026_05_29-00_00_01.vma.zst
+-rw-r--r-- 1 root root    9 May 29 00:08 vzdump-qemu-100-2026_05_29-00_00_01.vma.zst.notes
+-rw-r--r-- 1 root root 8.7K May 29 04:06 vzdump-qemu-100-2026_05_29-04_00_09.log
+-rw-r--r-- 1 root root 3.5G May 29 04:06 vzdump-qemu-100-2026_05_29-04_00_09.vma.zst
+-rw-r--r-- 1 root root    9 May 29 04:06 vzdump-qemu-100-2026_05_29-04_00_09.vma.zst.notes
+-rw-r--r-- 1 root root 4.0K May 29 08:01 vzdump-qemu-100-2026_05_29-08_00_11.log
+-rw-r--r-- 1 root root 3.9G May 29 08:01 vzdump-qemu-100-2026_05_29-08_00_11.vma.zst
+-rw-r--r-- 1 root root    9 May 29 08:01 vzdump-qemu-100-2026_05_29-08_00_11.vma.zst.notes
+-rw-r--r-- 1 root root 9.4K May 31 00:08 vzdump-qemu-100-2026_05_31-00_00_02.log
+-rw-r--r-- 1 root root 4.0G May 31 00:08 vzdump-qemu-100-2026_05_31-00_00_02.vma.zst
+-rw-r--r-- 1 root root    9 May 31 00:08 vzdump-qemu-100-2026_05_31-00_00_02.vma.zst.notes
+
+
+
+============================================================
+ COMMAND: Proxmox backup configuration (cat /etc/pve/vzdump.cron || echo 'No vzdump.cron')
+============================================================
+# cluster wide vzdump cron schedule
+# Automatically generated file - do not edit
+
+PATH="/usr/sbin:/usr/bin:/sbin:/bin"
+
+
+
+
+============================================================
+ COMMAND: Proxmox storage configuration (cat /etc/pve/storage.cfg)
+============================================================
+dir: local
+	path /var/lib/vz
+	content import,iso,vztmpl,backup
+
+lvmthin: local-lvm
+	thinpool data
+	vgname pve
+	content rootdir,images
+
+dir: LUMS-Offsite
+	path /mnt/lums-cloud
+	content backup
+	prune-backups keep-all=1
+	shared 0
+
+
+
+

@@ -1,0 +1,8 @@
+Successfully scheduled one-shot timer.
+Expected to fire at: 2026-08-06T22:54:18+05:00
+Prompt: Check if LXC setup script finished
+
+[2026-08-06T22:52:48+05:00] Still waiting. Remaining time: 1m30s
+[2026-08-06T22:53:18+05:00] Still waiting. Remaining time: 1m0s
+[2026-08-06T22:53:48+05:00] Still waiting. Remaining time: 30s
+[2026-08-06T22:54:18+05:00] Timer fired.

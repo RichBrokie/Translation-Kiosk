@@ -1,0 +1,23 @@
+
+Created symlink '/etc/systemd/system/default.target.wants/rclone-lums.service' →
+ '/etc/systemd/system/rclone-lums.service'.
+● rclone-lums.service - RClone Mount of LUMS OneDrive
+     Loaded: loaded (/etc/systemd/system/rclone-lums.service; enabled; preset: e
+nabled)
+     Active: active (running) since Sat 2026-08-08 06:02:15 PKT; 2s ago
+ Invocation: 7847a45a754741b98a528ddca92920f1
+   Main PID: 192427 (rclone)
+     Status: "[06:02] vfs cache: objects 0 (was 0) in use 0, to upload 0, upload
+ing 0, total size 0 (was 0)"
+      Tasks: 10 (limit: 7757)
+     Memory: 16.3M (peak: 16.7M)
+        CPU: 170ms
+     CGroup: /system.slice/rclone-lums.service
+             └─192427 /usr/bin/rclone mount lums_ondemand:ProxmoxBackups /mnt/lu
+ms-cloud --config=/root/.config/rclone/rclone.conf --allow-other --vfs-cache-mod
+e writes --dir-cache-time 1h
+
+Aug 08 06:02:12 proxmox systemd[1]: Starting rclone-lums.service - RClone Mount
+of LUMS OneDrive...
+Aug 08 06:02:15 proxmox systemd[1]: Started rclone-lums.service - RClone Mount o
+f LUMS OneDrive.

@@ -1,0 +1,5 @@
+- `[/]` Ensure Tablet is Fully Optimized
+    - `[x]` Check physical power state
+    - `[x]` Write and push `stop_stress.sh` auto-stopper
+    - `[x]` Check current kiosk optimization state
+    - `[/]` Run full `tablet_optimize.sh` to apply missed settings

@@ -1,0 +1,3 @@
+- [x] Write the bash orchestration script (`batch_ted.sh`)
+- [x] Dispatch the script as a background daemon
+- [x] Create `walkthrough.md` to summarize the execution

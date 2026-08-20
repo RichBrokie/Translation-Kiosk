@@ -1,0 +1,16 @@
+33G     /
+19G     /var
+12G     /usr
+1.9G    /opt
+231M    /boot
+20M     /etc
+4.3M    /tmp
+44K     /snap
+0       /srv
+0       /sbin.usr-is-merged
+0       /root
+0       /mnt
+0       /media
+0       /lib.usr-is-merged
+0       /cdrom
+0       /bin.usr-is-merged

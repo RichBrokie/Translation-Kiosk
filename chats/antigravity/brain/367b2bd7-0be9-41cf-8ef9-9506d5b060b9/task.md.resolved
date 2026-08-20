@@ -1,0 +1,7 @@
+- [/] Set up system dependencies (Requires manual script execution)
+  - [x] Add Cloudflare APT repository (Script prepared)
+  - [x] Install `cloudflare-warp`, `zenity`, and `libnotify-bin` (Script prepared)
+  - [x] Start and enable `warp-svc` (Script prepared)
+  - [x] Register WARP (`warp-cli registration new`) (Script prepared)
+- [x] Create `warp-toggle-gui` bash script
+- [x] Create `warp-toggle-gui.desktop` application entry

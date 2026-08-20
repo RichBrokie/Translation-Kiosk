@@ -1,0 +1,70 @@
+--- openai/whisper-large-v3-turbo ---
+[dry-run] Will download 13 files (out of 13) totalling 1.6G.
+FILE                     SIZE
+------------------------ ------
+.gitattributes           1.5K
+README.md                21.2K
+added_tokens.json        34.6K
+config.json              1.3K
+generation_config.json   3.8K
+merges.txt               493.9K
+model.safetensors        1.6G
+normalizer.json          52.7K
+preprocessor_config.json 340.0
+special_tokens_map.json  2.2K
+tokenizer.json           2.7M
+tokenizer_config.json    282.8K
+vocab.json               1.0M
+--- pyannote/speaker-diarization-3.1 ---
+[dry-run] Will download 24 files (out of 24) totalling 10.9M.
+FILE                                                                     SIZE
+------------------------------------------------------------------------ ------
+.gitattributes                                                           1.5K
+.github/workflows/sync_to_hub.yaml                                       467.0
+README.md                                                                11.0K
+config.yaml                                                              469.0
+handler.py                                                               2.2K
+reproducible_research/AISHELL.SpeakerDiarization.Benchmark.test.eval     3.4K
+reproducible_research/AISHELL.SpeakerDiarization.Benchmark.test.rttm     624.4K
+reproducible_research/AMI-SDM.SpeakerDiarization.Benchmark.test.eval     2.7K
+reproducible_research/AMI-SDM.SpeakerDiarization.Benchmark.test.rttm     573.0K
+reproducible_research/AMI.SpeakerDiarization.Benchmark.test.eval         2.7K
+reproducible_research/AMI.SpeakerDiarization.Benchmark.test.rttm         572.8K
+reproducible_research/AVA-AVD.SpeakerDiarization.Benchmark.test.eval     8.2K
+reproducible_research/AVA-AVD.SpeakerDiarization.Benchmark.test.rttm     365.2K
+reproducible_research/AliMeeting.SpeakerDiarization.Benchmark.test.eval  3.5K
+reproducible_research/AliMeeting.SpeakerDiarization.Benchmark.test.rttm  940.1K
+reproducible_research/DIHARD.SpeakerDiarization.Benchmark.test.eval      37.1K
+reproducible_research/DIHARD.SpeakerDiarization.Benchmark.test.rttm      3.6M
+reproducible_research/MSDWILD.SpeakerDiarization.Benchmark.test.eval     65.7K
+reproducible_research/MSDWILD.SpeakerDiarization.Benchmark.test.rttm     648.4K
+reproducible_research/REPERE.SpeakerDiarization.Benchmark.test.eval      10.7K
+reproducible_research/REPERE.SpeakerDiarization.Benchmark.test.rttm      1.4M
+reproducible_research/VoxConverse.SpeakerDiarization.Benchmark.test.eval 31.9K
+reproducible_research/VoxConverse.SpeakerDiarization.Benchmark.test.rttm 2.0M
+requirements.txt                                                         21.0
+--- Qwen/Qwen2.5-72B-Instruct-AWQ ---
+[dry-run] Will download 21 files (out of 21) totalling 41.6G.
+FILE                             SIZE
+-------------------------------- ------
+.gitattributes                   1.5K
+LICENSE                          7.0K
+README.md                        6.4K
+config.json                      841.0
+generation_config.json           243.0
+merges.txt                       1.7M
+model-00001-of-00011.safetensors 3.9G
+model-00002-of-00011.safetensors 3.9G
+model-00003-of-00011.safetensors 4.0G
+model-00004-of-00011.safetensors 4.0G
+model-00005-of-00011.safetensors 3.9G
+model-00006-of-00011.safetensors 4.0G
+model-00007-of-00011.safetensors 4.0G
+model-00008-of-00011.safetensors 3.9G
+model-00009-of-00011.safetensors 4.0G
+model-00010-of-00011.safetensors 3.5G
+model-00011-of-00011.safetensors 2.5G
+model.safetensors.index.json     179.0K
+tokenizer.json                   7.0M
+tokenizer_config.json            7.3K
+vocab.json                       2.8M

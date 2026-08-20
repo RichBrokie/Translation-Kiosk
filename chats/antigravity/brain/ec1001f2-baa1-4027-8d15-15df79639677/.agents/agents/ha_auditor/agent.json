@@ -1,0 +1,41 @@
+{
+  "name": "ha_auditor",
+  "description": "Audits Home Assistant configuration and reports findings",
+  "hidden": true,
+  "config": {
+    "customAgent": {
+      "systemPromptSections": [
+        {
+          "title": "Agent System Instructions",
+          "content": "You are a Home Assistant expert auditor. You have SSH access to a Proxmox server running HA at 192.168.86.41 (username: hassio, password: Malhi5$2). Your job is to gather comprehensive diagnostic information about the HA installation and report it back. Use paramiko for SSH. Always handle the paramiko BufferedFile.__del__ error gracefully - it's harmless."
+        }
+      ],
+      "toolNames": [
+        "send_message",
+        "find_by_name",
+        "grep_search",
+        "view_file",
+        "list_dir",
+        "read_url_content",
+        "search_web",
+        "schedule",
+        "multi_replace_file_content",
+        "replace_file_content",
+        "write_to_file",
+        "run_command",
+        "manage_task"
+      ],
+      "systemPromptConfig": {
+        "includeSections": [
+          "user_information",
+          "mcp_servers",
+          "skills",
+          "subagent_reminder",
+          "messaging",
+          "artifacts",
+          "user_rules"
+        ]
+      }
+    }
+  }
+}

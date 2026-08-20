@@ -1,0 +1,12 @@
+
+total 5659343
+drwxr-xr-x 1 root root          0 Aug  8 06:45 .
+drwxr-xr-x 1 root root          0 Aug  8 07:03 ..
+-rw-r--r-- 1 root root 2040066459 Aug  8 06:48 vzdump-lxc-101-2026_08_08-06_47_0
+4.tar.dat
+-rw-r--r-- 1 root root       3662 Aug  8 06:47 vzdump-qemu-100-2026_08_08-06_45_
+46.log
+-rw-r--r-- 1 root root 3755095691 Aug  8 06:47 vzdump-qemu-100-2026_08_08-06_45_
+46.vma.zst
+-rw-r--r-- 1 root root          9 Aug  8 06:47 vzdump-qemu-100-2026_08_08-06_45_
+46.vma.zst.notes

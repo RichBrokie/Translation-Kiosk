@@ -1,0 +1,27 @@
+# Goal Description
+Update the battery-saving script to automatically pause unnecessary background services and tasks when on battery, and resume them on AC power to maximize battery life.
+
+## User Review Required
+We need to decide *which* services to pause. Stopping cloud syncs and file indexers significantly saves battery, but it also temporarily pauses their functionality while unplugged.
+
+## Open Questions
+Please review the proposed services below and let me know if you want to keep any of them running even on battery:
+
+1. **Cloud Sync (`onedrive.service` and `rclone-onedrive.service`)**: Pausing them saves a lot of battery but delays file syncing until you plug in. Should I pause these?
+2. **File Indexing (`tracker-miner-fs-3`)**: Used for GNOME file search, can be heavy on disk/CPU when indexing.
+3. **Background Sync (`evolution-*` services)**: GNOME's background calendar and contacts sync.
+
+> [!WARNING]
+> We will primarily target **user-level services** because system-level services (like bluetooth or printing) require constant administrator (sudo) passwords to start/stop, which would disrupt your workflow with popups every time you unplug your laptop.
+
+## Proposed Changes
+
+### `~/.local/bin/auto-animations.sh`
+- [MODIFY] `auto-animations.sh` to include `systemctl --user stop <services>` when discharging.
+- [MODIFY] `auto-animations.sh` to include `systemctl --user start <services>` when charging.
+
+## Verification Plan
+
+### Automated Tests
+- Run the script manually to ensure no syntax errors.
+- Check `systemctl --user is-active <service>` to confirm the services successfully stop and start based on the power state logic.

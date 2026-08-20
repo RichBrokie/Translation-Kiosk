@@ -1,0 +1,102 @@
+
+Aug 08 06:40:33 proxmox systemd[1]: Starting rclone-lums.service - RClone Mount
+of LUMS OneDrive...
+Aug 08 06:40:36 proxmox systemd[1]: Started rclone-lums.service - RClone Mount o
+f LUMS OneDrive.
+Aug 08 06:43:45 proxmox rclone[211897]: ERROR : dump/: Dir.Stat error: couldn't
+list files: itemNotFound: The resource could not be found.
+Aug 08 06:43:45 proxmox rclone[211897]: ERROR : IO error: couldn't list files: i
+temNotFound: The resource could not be found.
+Aug 08 06:43:46 proxmox rclone[211897]: ERROR : dump/: Dir.Stat error: couldn't
+list files: itemNotFound: The resource could not be found.
+Aug 08 06:43:46 proxmox rclone[211897]: ERROR : IO error: couldn't list files: i
+temNotFound: The resource could not be found.
+Aug 08 06:43:47 proxmox rclone[211897]: ERROR : dump/: Dir.Stat error: couldn't
+list files: itemNotFound: The resource could not be found.
+Aug 08 06:43:47 proxmox rclone[211897]: ERROR : IO error: couldn't list files: i
+temNotFound: The resource could not be found.
+Aug 08 06:43:48 proxmox rclone[211897]: ERROR : dump/: Dir.Stat error: couldn't
+list files: itemNotFound: The resource could not be found.
+Aug 08 06:43:48 proxmox rclone[211897]: ERROR : IO error: couldn't list files: i
+temNotFound: The resource could not be found.
+Aug 08 06:43:49 proxmox rclone[211897]: ERROR : dump/: Dir.Stat error: couldn't
+list files: itemNotFound: The resource could not be found.
+Aug 08 06:43:49 proxmox rclone[211897]: ERROR : IO error: couldn't list files: i
+temNotFound: The resource could not be found.
+Aug 08 06:43:50 proxmox rclone[211897]: ERROR : dump/: Dir.Stat error: couldn't
+list files: itemNotFound: The resource could not be found.
+Aug 08 06:43:50 proxmox rclone[211897]: ERROR : IO error: couldn't list files: i
+temNotFound: The resource could not be found.
+Aug 08 06:43:51 proxmox rclone[211897]: ERROR : dump/: Dir.Stat error: couldn't
+list files: itemNotFound: The resource could not be found.
+Aug 08 06:43:51 proxmox rclone[211897]: ERROR : IO error: couldn't list files: i
+temNotFound: The resource could not be found.
+Aug 08 06:43:52 proxmox rclone[211897]: ERROR : dump/: Dir.Stat error: couldn't
+list files: itemNotFound: The resource could not be found.
+Aug 08 06:43:52 proxmox rclone[211897]: ERROR : IO error: couldn't list files: i
+temNotFound: The resource could not be found.
+Aug 08 06:43:55 proxmox rclone[211897]: ERROR : dump/: Dir.Stat error: couldn't
+list files: itemNotFound: The resource could not be found.
+Aug 08 06:43:55 proxmox rclone[211897]: ERROR : IO error: couldn't list files: i
+temNotFound: The resource could not be found.
+Aug 08 06:43:56 proxmox rclone[211897]: ERROR : dump/: Dir.Stat error: couldn't
+list files: itemNotFound: The resource could not be found.
+Aug 08 06:43:56 proxmox rclone[211897]: ERROR : IO error: couldn't list files: i
+temNotFound: The resource could not be found.
+Aug 08 06:43:57 proxmox rclone[211897]: ERROR : dump/: Dir.Stat error: couldn't
+list files: itemNotFound: The resource could not be found.
+Aug 08 06:43:57 proxmox rclone[211897]: ERROR : IO error: couldn't list files: i
+temNotFound: The resource could not be found.
+Aug 08 06:43:58 proxmox rclone[211897]: ERROR : dump/: Dir.Stat error: couldn't
+list files: itemNotFound: The resource could not be found.
+Aug 08 06:43:58 proxmox rclone[211897]: ERROR : IO error: couldn't list files: i
+temNotFound: The resource could not be found.
+Aug 08 06:43:59 proxmox rclone[211897]: ERROR : dump/: Dir.Stat error: couldn't
+list files: itemNotFound: The resource could not be found.
+Aug 08 06:43:59 proxmox rclone[211897]: ERROR : IO error: couldn't list files: i
+temNotFound: The resource could not be found.
+Aug 08 06:44:00 proxmox rclone[211897]: ERROR : dump/: Dir.Stat error: couldn't
+list files: itemNotFound: The resource could not be found.
+Aug 08 06:44:00 proxmox rclone[211897]: ERROR : IO error: couldn't list files: i
+temNotFound: The resource could not be found.
+Aug 08 06:44:01 proxmox rclone[211897]: ERROR : dump/: Dir.Stat error: couldn't
+list files: itemNotFound: The resource could
+list files: itemNotFound: The resource could not be found.
+Aug 08 06:44:01 proxmox rclone[211897]: ERROR : IO error: couldn't list files: i
+temNotFound: The resource could not be found.
+Aug 08 06:44:03 proxmox rclone[211897]: ERROR : dump/: Dir.Stat error: couldn't
+list files: itemNotFound: The resource could not be found.
+Aug 08 06:44:03 proxmox rclone[211897]: ERROR : IO error: couldn't list files: i
+temNotFound: The resource could not be found.
+Aug 08 06:44:04 proxmox rclone[211897]: ERROR : dump/: Dir.Stat error: couldn't
+list files: itemNotFound: The resource could not be found.
+Aug 08 06:44:04 proxmox rclone[211897]: ERROR : IO error: couldn't list files: i
+temNotFound: The resource could not be found.
+Aug 08 06:44:05 proxmox rclone[211897]: ERROR : dump/: Dir.Stat error: couldn't
+list files: itemNotFound: The resource could not be found.
+Aug 08 06:44:05 proxmox rclone[211897]: ERROR : IO error: couldn't list files: i
+temNotFound: The resource could not be found.
+Aug 08 06:44:06 proxmox rclone[211897]: ERROR : dump/: Dir.Stat error: couldn't
+list files: itemNotFound: The resource could not be found.
+Aug 08 06:44:06 proxmox rclone[211897]: ERROR : IO error: couldn't list files: i
+temNotFound: The resource could not be found.
+Aug 08 06:44:07 proxmox rclone[211897]: ERROR : dump/: Dir.Stat error: couldn't
+list files: itemNotFound: The resource could not be found.
+Aug 08 06:44:07 proxmox rclone[211897]: ERROR : IO error: couldn't list files: i
+temNotFound: The resource could not be found.
+Aug 08 06:44:09 proxmox rclone[211897]: ERROR : dump/: Dir.Stat error: couldn't
+list files: itemNotFound: The resource could not be found.
+Aug 08 06:44:09 proxmox rclone[211897]: ERROR : IO error: couldn't list files: i
+temNotFound: The resource could not be found.
+Aug 08 06:44:10 proxmox rclone[211897]: ERROR : dump/: Dir.Stat error: couldn't
+list files: itemNotFound: The resource could not be found.
+Aug 08 06:44:10 proxmox rclone[211897]: ERROR : IO error: couldn't list files: i
+temNotFound: The resource could not be found.
+Aug 08 06:44:11 proxmox rclone[211897]: ERROR : dump/: Dir.Stat error: couldn't
+list files: itemNotFound: The resource could not be found.
+Aug 08 06:44:11 proxmox rclone[211897]: ERROR : IO error: couldn't list files: i
+temNotFound: The resource could not be found.
+Aug 08 06:44:12 proxmox rclone[211897]: ERROR : dump/: Dir.Stat error: couldn't
+list files: itemNotFound: The resource could not be found.
+Aug 08 06:44:12 proxmox rclone[211897]: ERROR : IO error: couldn't list files: i
+temNotFound: The resource could not be found.

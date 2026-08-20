@@ -1,0 +1,31 @@
+OUT:
+ [dry-run] Will download 21 files (out of 21) totalling 41.6G.
+FILE                             SIZE
+-------------------------------- ------
+.gitattributes                   1.5K
+LICENSE                          7.0K
+README.md                        6.4K
+config.json                      841.0
+generation_config.json           243.0
+merges.txt                       1.7M
+model-00001-of-00011.safetensors 3.9G
+model-00002-of-00011.safetensors 3.9G
+model-00003-of-00011.safetensors 4.0G
+model-00004-of-00011.safetensors 4.0G
+model-00005-of-00011.safetensors 3.9G
+model-00006-of-00011.safetensors 4.0G
+model-00007-of-00011.safetensors 4.0G
+model-00008-of-00011.safetensors 3.9G
+model-00009-of-00011.safetensors 4.0G
+model-00010-of-00011.safetensors 3.5G
+model-00011-of-00011.safetensors 2.5G
+model.safetensors.index.json     179.0K
+tokenizer.json                   7.0M
+tokenizer_config.json            7.3K
+vocab.json                       2.8M
+
+ERR:
+[dry-run] Fetching 21 files:   0%|          | 0/21 [00:00<?, ?it/s]Warning: You
+are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to ena
+ble higher rate limits and faster downloads.
+[dry-run] Fetching 21 files: 100%|██████████| 21/21 [00:05<00:00,  3.51it/s]

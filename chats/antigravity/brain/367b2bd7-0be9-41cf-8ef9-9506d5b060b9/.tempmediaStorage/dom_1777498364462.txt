@@ -1,0 +1,116 @@
+Get app
+Write
+Sign up
+Sign in
+[0] (500,-124)<pre class='pu pv pw px py pz qa qb bl qc ax bg' scrollable='true'>CHOICE=$(zenity --list --radiolist \
+--title=
+--width=420 --height=280 \
+--text=
+\
+--column=
+--column=
+\
+\
+\
+)
+[ -z
+] &&
+0
+)
+mode warp &&
+connect && notify
+;;
+)
+mode doh &&
+connect && notify
+;;
+)
+disconnect && notify
+;;
+EOF
++x ~/.local/bin/warp-toggle-gui />
+	CHOICE=$(zenity --list --radiolist \
+	--title=
+	"Cloudflare WARP"
+	--width=420 --height=280 \
+	--text=
+	"Status:
+	$STATE
+	| Mode:
+	$MODE
+	"
+	\
+	--column=
+	" "
+	--column=
+	"Action"
+	\
+	$ON_WARP
+	"Enable WARP (VPN)"
+	\
+	$ON_DOH
+	"Enable 1.1.1.1 (DoH)"
+	\
+	$ON_OFF
+	"Turn OFF"
+	)
+	[ -z
+	"
+	${CHOICE:-}
+	"
+	] &&
+	exit
+	0
+	case
+	"
+	$CHOICE
+	"
+	in
+	"Enable WARP (VPN)"
+	)
+	$WARP
+	mode warp &&
+	$WARP
+	connect && notify
+	"Connected (WARP)"
+	;;
+	"Enable 1.1.1.1 (DoH)"
+	)
+	$WARP
+	mode doh &&
+	$WARP
+	connect && notify
+	"Connected (DoH)"
+	;;
+	"Turn OFF"
+	)
+	$WARP
+	disconnect && notify
+	"Disconnected"
+	;;
+	esac
+	EOF
+	chmod
+	+x ~/.local/bin/warp-toggle-gui
+🖥️ Add to your app launcher
+mkdir
+-p ~/.local/share/applications
+cat
+> ~/.local/share/applications/warp-toggle-gui.desktop <<
+'EOF'
+[Desktop Entry]
+Type=Application
+Name=Cloudflare WARP Toggle (Custom)
+Comment=Enable WARP VPN, 1.1.1.1 (DoH), or turn OFF
+Exec=warp-toggle-gui
+Icon=network-vpn
+Terminal=
+false
+Categories=Network;Security;
+EOF
+update-desktop-database ~/.local/share/applications/
+Now you can find Cloudflare WARP Toggle (Custom) in your app menu.
+🔒 Remove password prompts
+Add a sudoers rule (replace
+iceblue
+with your username):

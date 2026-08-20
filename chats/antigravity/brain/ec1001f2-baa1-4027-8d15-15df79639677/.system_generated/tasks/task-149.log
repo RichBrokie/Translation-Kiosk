@@ -1,0 +1,28 @@
+
+============================================================
+CMD: sudo free -m...
+============================================================
+               total        used        free      shared  buff/cache   available
+Mem:            3854         806        2458           4         672        3048
+Swap:           1272         111        1160
+
+
+============================================================
+CMD: sudo sed -i 's/- id: \'peak_hours_ac_enforce\'/- id: \'peak_hours_ac_enforc
+e\'\n  alias: \'Peak Hour...
+============================================================
+============================================================
+CMD: sudo grep -A 5 'peak_hours_ac_enforce' /config/automations.yaml...
+============================================================
+- id: 'peak_hours_ac_enforce'
+  alias: 'Peak Hours: Only One AC Allowed'
+  description: >-
+    During peak hours, ensures only one AC can run at a time.
+    The last AC turned on stays on, all others are turned off.
+  mode: restart
+
+
+============================================================
+CMD: sudo curl -s -X POST --unix-socket /var/run/docker.sock 'http://localhost/c
+ontainers/homeassistant/r...
+============================================================

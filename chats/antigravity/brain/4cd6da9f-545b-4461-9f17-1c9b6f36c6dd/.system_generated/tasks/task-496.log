@@ -1,0 +1,33 @@
+
+-rw-r--r-- 1 root root 1.9G Aug  7 00:02 vzdump-lxc-101-2026_08_07-00_01_23.tar.
+zst
+-rw-r--r-- 1 root root    6 Aug  7 00:02 vzdump-lxc-101-2026_08_07-00_01_23.tar.
+zst.notes
+-rw-r--r-- 1 root root 1.9G Aug  8 00:05 vzdump-lxc-101-2026_08_08-00_03_08.tar.
+zst
+-rw-r--r-- 1 root root    6 Aug  8 00:05 vzdump-lxc-101-2026_08_08-00_03_08.tar.
+zst.notes
+-rw-r--r-- 1 root root 267M Aug  7 00:02 vzdump-lxc-102-2026_08_07-00_02_10.tar.
+zst
+-rw-r--r-- 1 root root   11 Aug  7 00:02 vzdump-lxc-102-2026_08_07-00_02_10.tar.
+zst.notes
+-rw-r--r-- 1 root root 267M Aug  8 00:05 vzdump-lxc-102-2026_08_08-00_05_26.tar.
+zst
+-rw-r--r-- 1 root root   11 Aug  8 00:05 vzdump-lxc-102-2026_08_08-00_05_26.tar.
+zst.notes
+-rw-r--r-- 1 root root 208M Jul  6 00:19 vzdump-lxc-103-2026_07_06-00_18_33.tar.
+zst
+-rw-r--r-- 1 root root    7 Jul  6 00:19 vzdump-lxc-103-2026_07_06-00_18_33.tar.
+zst.notes
+-rw-r--r-- 1 root root 208M Jul  7 00:16 vzdump-lxc-103-2026_07_07-00_15_23.tar.
+zst
+-rw-r--r-- 1 root root    7 Jul  7 00:16 vzdump-lxc-103-2026_07_07-00_15_23.tar.
+zst.notes
+-rw-r--r-- 1 root root 3.5G Aug  7 00:01 vzdump-qemu-100-2026_08_07-00_00_12.vma
+.zst
+-rw-r--r-- 1 root root    9 Aug  7 00:01 vzdump-qemu-100-2026_08_07-00_00_12.vma
+.zst.notes
+-rw-r--r-- 1 root root 3.5G Aug  8 00:03 vzdump-qemu-100-2026_08_08-00_00_02.vma
+.zst
+-rw-r--r-- 1 root root    9 Aug  8 00:03 vzdump-qemu-100-2026_08_08-00_00_02.vma
+.zst.notes

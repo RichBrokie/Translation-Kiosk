@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeBase | Mission Control</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card: #1e293b;
+            --text: #f8fafc;
+            --accent: #38bdf8;
+            --hover: #0284c7;
+            --proxmox: #e57000;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            width: 90%;
+            padding: 20px;
+        }
+
+        .card {
+            background: var(--card);
+            padding: 30px;
+            border-radius: 24px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+        }
+
+        .welcome-card {
+            grid-column: 1 / -1; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+        }
+
+        h1, h2, h3 { margin: 0; }
+        h1 { color: var(--text); font-size: 2rem; }
+        h2 { color: var(--accent); font-size: 2.5rem; font-variant-numeric: tabular-nums; }
+        h3 { color: var(--accent); margin-bottom: 20px; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 1px;}
+
+        .link-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        a {
+            color: var(--text);
+            text-decoration: none;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: color 0.2s;
+            padding: 10px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+        }
+
+        a:hover { 
+            color: var(--accent); 
+            background: rgba(255,255,255,0.1);
+        }
+
+        p { margin: 10px 0 0 0; color: #94a3b8; }
+
+        /* Proxmox Stats Styles */
+        .proxmox-header { color: var(--proxmox); transition: color 0.3s; }
+        .card:hover .proxmox-header { color: #ff8c00; }
+        
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        .stat-bar-bg {
+            width: 100%;
+            height: 8px;
+            background: #334155;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+
+        .stat-bar-fill {
+            height: 100%;
+            background: var(--proxmox);
+            border-radius: 4px;
+            width: 0%; 
+            transition: width 0.5s ease-in-out;
+        }
+
+        .temp-high { color: #ef4444; font-weight: bold; }
+        .temp-normal { color: #22c55e; font-weight: bold; }
+
+        /* Download Stats Styles */
+        --download: #a855f7;
+        .download-header { color: #a855f7; transition: color 0.3s; }
+        .card:hover .download-header { color: #d8b4fe; }
+        .queue-list { font-size: 0.9rem; color: #94a3b8; margin-top: 10px; }
+        .queue-item.active { color: #a855f7; font-weight: bold; }
+        .queue-item.done { text-decoration: line-through; opacity: 0.5; }
+
+    </style>
+</head>
+<body>
+
+    <div class="bento-grid">
+        <div class="card welcome-card">
+            <div>
+                <h1>HomeBase</h1>
+                <p>Systems Online</p>
+            </div>
+            <h2 id="clock">00:00</h2>
+        </div>
+
+        <div class="card">
+            <h3>Local Weather</h3>
+            <div style="display: flex; align-items: center; gap: 15px; margin-top: 15px;">
+                <div id="weather-icon" style="font-size: 3.5rem;">⛅</div>
+                <div>
+                    <div id="weather-temp" style="font-size: 2.2rem; font-weight: bold; color: var(--text);">--°</div>
+                    <div id="weather-desc" style="color: #94a3b8; text-transform: capitalize; font-size: 1.1rem;">Loading...</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>My Services</h3>
+            <div class="link-list">
+                <a href="https://hass.weplaymc.online" target="_blank">🏠 Home Assistant</a>
+                <a href="https://vault.weplaymc.online" target="_blank">🔐 Vaultwarden</a>
+            </div>
+        </div>
+
+        <div class="card" style="border-bottom: 2px solid transparent;" onmouseover="this.style.borderColor='#a855f7'" onmouseout="this.style.borderColor='transparent'">
+            <h3 class="download-header">Model Download Status</h3>
+            
+            <div class="stat-row">
+                <span id="dl-model-name">Initializing...</span>
+                <span id="dl-text">0%</span>
+            </div>
+            <div class="stat-bar-bg"><div id="dl-bar" class="stat-bar-fill" style="background: #a855f7;"></div></div>
+
+            <div class="stat-row" style="margin-top: 10px; font-size: 0.95rem; color: #cbd5e1;">
+                <span id="dl-eta">ETA: --:--:--</span>
+                <span id="dl-speed">-- MB/s</span>
+            </div>
+            
+            <div class="queue-list" id="dl-queue">
+                <!-- Queue items injected via JS -->
+            </div>
+        </div>
+
+        <div class="card" style="border-bottom: 2px solid transparent;" onmouseover="this.style.borderColor='#e57000'" onmouseout="this.style.borderColor='transparent'">
+            <h3 class="proxmox-header">Proxmox Node</h3>
+            
+            <div class="stat-row">
+                <span>CPU Usage</span>
+                <span id="cpu-text">--%</span>
+            </div>
+            <div class="stat-bar-bg"><div id="cpu-bar" class="stat-bar-fill"></div></div>
+
+            <div class="stat-row">
+                <span>RAM Usage</span>
+                <span id="ram-text">--%</span>
+            </div>
+            <div class="stat-bar-bg"><div id="ram-bar" class="stat-bar-fill"></div></div>
+
+            <div class="stat-row" style="margin-top: 20px;">
+                <span>Core Temp</span>
+                <span id="temp-text" class="temp-normal">--°C</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Fetch stats from the local JSON file
+        async function updateLocalStats() {
+            try {
+                const response = await fetch('stats.json?t=' + new Date().getTime());
+                
+                if (!response.ok) throw new Error("stats.json not found");
+                
+                const data = await response.json();
+
+                // Update CPU
+                if (data.cpu && data.cpu !== "unknown") {
+                    const cpuRounded = Math.round(parseFloat(data.cpu));
+                    document.getElementById('cpu-text').textContent = cpuRounded + '%';
+                    document.getElementById('cpu-bar').style.width = cpuRounded + '%';
+                }
+
+                // Update RAM
+                if (data.ram && data.ram !== "unknown") {
+                    const ramRounded = Math.round(parseFloat(data.ram));
+                    document.getElementById('ram-text').textContent = ramRounded + '%'; 
+                    document.getElementById('ram-bar').style.width = ramRounded + '%';
+                }
+
+                // Update Proxmox Temperature
+                if (data.temp && data.temp !== "unknown") {
+                    const tempRounded = Math.round(parseFloat(data.temp));
+                    const tempEl = document.getElementById('temp-text');
+                    tempEl.textContent = tempRounded + '°C';
+                    
+                    if (tempRounded > 75) tempEl.className = 'temp-high';
+                    else tempEl.className = 'temp-normal';
+                }
+
+                // Update Weather
+                if (data.weather && data.weather.condition !== "unknown") {
+                    // Replace dashes with spaces for clean text (e.g., "partly-cloudy" -> "partly cloudy")
+                    const conditionRaw = data.weather.condition;
+                    document.getElementById('weather-desc').textContent = conditionRaw.replace(/-/g, ' ');
+                    
+                    // Add the temperature degree symbol
+                    const currentTemp = data.weather.temp;
+                    if (currentTemp !== "--") {
+                        document.getElementById('weather-temp').textContent = Math.round(parseFloat(currentTemp)) + '°';
+                    }
+
+                    // Simple logic to change the emoji icon based on HA weather states
+                    let icon = '⛅'; 
+                    const c = conditionRaw.toLowerCase();
+                    if (c.includes('sunny') || c.includes('clear')) icon = '☀️';
+                    else if (c.includes('rain') || c.includes('drizzle') || c.includes('pour')) icon = '🌧️';
+                    else if (c.includes('cloudy')) icon = '☁️';
+                    else if (c.includes('snow') || c.includes('hail')) icon = '❄️';
+                    else if (c.includes('lightning') || c.includes('thunder')) icon = '⛈️';
+                    else if (c.includes('fog')) icon = '🌫️';
+                    
+                    document.getElementById('weather-icon').textContent = icon;
+                }
+
+            } catch (error) {
+                console.log("Waiting for backend script...", error);
+            }
+        }
+
+        // Clock Function
+        function updateClock() {
+            const now = new Date();
+            document.getElementById('clock').textContent = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        }
+
+        // Start Clock
+        setInterval(updateClock, 1000);
+        updateClock();
+
+        // Pull new data from the local JSON file every 2 seconds
+        setInterval(updateLocalStats, 2000); 
+        updateLocalStats(); 
+
+        // Download Stats Logic
+        async function updateDownloadStats() {
+            try {
+                const response = await fetch('download_stats.json?t=' + new Date().getTime());
+                if (!response.ok) return;
+                const data = await response.json();
+                
+                document.getElementById('dl-model-name').textContent = data.current_model || "Waiting...";
+                document.getElementById('dl-text').textContent = data.percentage + '%';
+                document.getElementById('dl-bar').style.width = data.percentage + '%';
+                document.getElementById('dl-eta').textContent = 'ETA: ' + (data.eta || '--:--:--');
+                document.getElementById('dl-speed').textContent = data.speed || '-- MB/s';
+                
+                if (data.queue && Array.isArray(data.queue)) {
+                    let queueHtml = '<div style="margin-bottom: 5px;"><strong>Queue:</strong></div>';
+                    data.queue.forEach(item => {
+                        let statusClass = item.status === 'downloading' ? 'active' : (item.status === 'done' ? 'done' : '');
+                        queueHtml += `<div class="queue-item ${statusClass}">• ${item.name}</div>`;
+                    });
+                    document.getElementById('dl-queue').innerHTML = queueHtml;
+                }
+            } catch (error) {
+                console.log("Waiting for download backend...", error);
+            }
+        }
+        setInterval(updateDownloadStats, 2000);
+        updateDownloadStats();
+    </script>
+
+</body>
+</html>
+

@@ -1,0 +1,105 @@
+
+=== 1. Firewall Status ===
+Status: disabled/running
+No host.fw
+No cluster.fw
+
+=== 2. SSH Configuration ===
+PermitRootLogin yes
+
+=== 3. Open Listening Ports ===
+Netid State  Recv-Q Send-Q              Local Address:Port  Peer Address:PortPro
+cess
+
+udp   UNCONN 0      0                         0.0.0.0:111        0.0.0.0:*    us
+ers:(("rpcbind",pid=586,fd=5),("systemd",pid=1,fd=248))
+
+udp   UNCONN 0      0                       127.0.0.1:323        0.0.0.0:*    us
+ers:(("chronyd",pid=778,fd=5))
+
+udp   UNCONN 0      0                         0.0.0.0:41641      0.0.0.0:*    us
+ers:(("tailscaled",pid=712,fd=19))
+
+udp   UNCONN 0      0                         0.0.0.0:5353       0.0.0.0:*    us
+ers:(("avahi-daemon",pid=691,fd=12))
+
+udp   UNCONN 0      0                         0.0.0.0:46418      0.0.0.0:*    us
+ers:(("avahi-daemon",pid=691,fd=14))
+
+udp   UNCONN 0      0                            [::]:44379         [::]:*    us
+ers:(("avahi-daemon",pid=691,fd=15))
+
+udp   UNCONN 0      0                            [::]:111           [::]:*    us
+ers:(("rpcbind",pid=586,fd=7),("systemd",pid=1,fd=250))
+
+udp   UNCONN 0      0                           [::1]:323           [::]:*    us
+ers:(("chronyd",pid=778,fd=6))
+
+udp   UNCONN 0      0                            [::]:41641         [::]:*    us
+ers:(("tailscaled",pid=712,fd=20))
+
+udp   UNCONN 0      0                            [::]:5353          [::]:*    us
+ers:(("avahi-daemon",pid=691,fd=13))
+
+tcp   LISTEN 0      100                     127.0.0.1:25         0.0.0.0:*    us
+ers:(("master",pid=205896,fd=13))
+
+tcp   LISTEN 0      4096                    127.0.0.1:85         0.0.0.0:*    us
+ers:(("pvedaemon worke",pid=1149,fd=6),("pvedaemon worke",pid=1148,fd=6),("pveda
+emon worke",pid=1147,fd=6),("pvedaemon",pid=1146,fd=6))
+tcp   LISTEN 0      128                       0.0.0.0:22         0.0.0.0:*    us
+ers:(("sshd",pid=942,fd=6))
+
+tcp   LISTEN 0      4096                      0.0.0.0:111        0.0.0.0:*    us
+ers:(("rpcbind",pid=586,fd=4),("systemd",pid=1,fd=247))
+
+tcp   LISTEN 0      5                         0.0.0.0:46665      0.0.0.0:*    us
+ers:(("uxplay",pid=1460,fd=11))
+
+tcp   LISTEN 0      4096               100.85.181.112:40584      0.0.0.0:*    us
+ers:(("tailscaled",pid=712,fd=24))
+
+tcp   LISTEN 0      2048                      0.0.0.0:61208      0.0.0.0:*    us
+ers:(("glances",pid=912,fd=10))
+tcp   LISTEN 0      100                         [::1]:25            [::]:*    us
+ers:(("master",pid=205896,fd=14))
+
+tcp   LISTEN 0      128                          [::]:22            [::]:*    us
+ers:(("sshd",pid=942,fd=7))
+
+tcp   LISTEN 0      4096                         [::]:111           [::]:*    us
+ers:(("rpcbind",pid=586,fd=6),("systemd",pid=1,fd=249))
+
+tcp   LISTEN 0      5                            [::]:46665         [::]:*    us
+ers:(("uxplay",pid=1460,fd=12))
+
+tcp   LISTEN 0      4096   [fd7a:115c:a1e0::a33:b571]:39308         [::]:*    us
+ers:(("tailscaled",pid=712,fd=25))
+
+tcp   LISTEN 0      4096                            *:8006             *:*    us
+ers:(("pveproxy worker",pid=196745,fd=6),("pveproxy worker",pid=196414,fd=6),("p
+veproxy worker",pid=35310,fd=6),("pveproxy",pid=1160,fd=6))
+tcp   LISTEN 0      4096                            *:3128             *:*    us
+ers:(("spiceproxy work",pid=35297,fd=6),("spiceproxy",pid=1169,fd=6))
+
+
+=== 4. Installed Security Tools ===
+ii  iptables                             1.8.11-2                             am
+d64        administration tools for packet filtering and NAT
+
+=== 5. Root Password Last Changed ===
+Last password change                                    : Jan 16, 2026
+
+=== 6. Recent Failed Logins ===
+Aug 08 05:46:09 proxmox sshd-session[184101]: Failed password for root from 192.
+168.86.247 port 36454 ssh2
+Aug 08 05:46:13 proxmox sshd-session[184112]: Failed password for invalid user a
+hmad from 192.168.86.247 port 36464 ssh2
+Aug 08 05:48:11 proxmox sshd-session[185150]: Failed password for root from 192.
+168.86.41 port 46876 ssh2
+Aug 08 05:48:11 proxmox sshd-session[185150]: Failed password for root from 192.
+168.86.41 port 46876 ssh2
+Aug 08 05:57:00 proxmox sshd-session[189650]: Failed password for root from 192.
+168.86.247 port 44222 ssh2
+Aug 08 05:57:00 proxmox sshd-session[189650]: Failed password for root from 192.
+168.86.247 port 44222 ssh2

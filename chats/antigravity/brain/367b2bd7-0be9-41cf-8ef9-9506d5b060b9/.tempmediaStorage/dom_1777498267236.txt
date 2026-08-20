@@ -1,0 +1,47 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (85,29)<a aria-label='Homepage' class='z ab ac ae af ag ah ai aj ak al am an ao ap v' href='/?source=post_page---top_nav_layout_nav-----------------------------------------' />
+[1] (322,29)<input aria-label='search' class='ae ba bb bc u bd be bf bg bh' placeholder='Search' role='combobox' />
+[2] (556,29)<button aria-label='Get the Medium app' class='v j fm fn fe ae ak fo fp' />
+	[3] (571,29)<span >Get app />
+[4] (670,29)<a class='z ab ac fl af ag ah ai aj ak al am an ao ap' href='/m/signin?operation=register&redirect=https%3A%2F%2Fmedium.com%2Fnew-story&source=---top_nav_layout_nav-----------------------new_post_topnav------------------' />
+	[5] (670,29)<div >Write />
+[6] (766,29)<button class='bb b eb ec el ed ee em ef eg eo ep ei eq er ek es et eu ev ew ex ey ez fa fb fc fd fe ff fg fh bi fi fj'>Sign up />
+[7] (843,29)<a class='z ab ac fl af ag ah ai aj ak al am an ao ap' href='/m/signin?operation=login&redirect=https%3A%2F%2Fmedium.com%2F%40Alcaron%2Fhow-i-built-a-cloudflare-warp-gui-toggle-on-linux-wayland-friendly-568f299956ca&source=post_page---top_nav_layout_nav-----------------------global_nav------------------'>Sign in />
+[8] (942,27)<button aria-label='user options menu' class='ae gi ai v j ak fv gj gk gl' />
+	[9] (942,27)<div  />
+		[10] (942,27)<div  />
+🌐 How I Built a Cloudflare WARP GUI Toggle on Linux (Wayland-Friendly)
+[11] (151,326)<a href='/@Alcaron?source=post_page---byline--568f299956ca---------------------------------------' />
+	[12] (151,326)<div  />
+		[13] (151,326)<div  />
+			[14] (151,326)<div  />
+[15] (208,327)<a class='z ab ac fl af ag ah ai aj ak al am an jj' href='/@Alcaron?source=post_page---byline--568f299956ca---------------------------------------'>Alcaron />
+3 min read
+·
+Oct 15, 2025
+[16] (153,407)<a class='z ab ac fl af ag ah ai aj ak al am an ao ap' href='/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2F568f299956ca&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40Alcaron%2Fhow-i-built-a-cloudflare-warp-gui-toggle-on-linux-wayland-friendly-568f299956ca&user=Alcaron&userId=b40d22fb0f78&source=---header_actions--568f299956ca---------------------clap_footer------------------' />
+	[17] (153,407)<div  />
+		[18] (153,407)<div class='bi' role='tooltip' />
+			[19] (153,407)<div class='ba' />
+				[20] (153,407)<div class='la ak lb lc ld le ai lf lg lh kz' role='presentation' />
+--
+[21] (226,407)<button aria-label='responses' class='ak la lr ls v j fw lt lu' />
+[22] (720,406)<a class='z ab ac fl af ag ah ai aj ak al am an ao ap' href='/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F568f299956ca&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40Alcaron%2Fhow-i-built-a-cloudflare-warp-gui-toggle-on-linux-wayland-friendly-568f299956ca&source=---header_actions--568f299956ca---------------------bookmark_footer------------------' />
+	[23] (720,406)<span  />
+[24] (774,407)<a class='z ab ac fl af ag ah ai aj ak al am an ao ap' href='/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3D568f299956ca&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40Alcaron%2Fhow-i-built-a-cloudflare-warp-gui-toggle-on-linux-wayland-friendly-568f299956ca&source=---header_actions--568f299956ca---------------------post_audio_button------------------' />
+	[25] (774,407)<div  />
+		[26] (774,407)<div class='bi' role='tooltip' />
+			[27] (774,407)<div class='ba' />
+				[28] (774,407)<button aria-label='Listen' class='z fw ac fl af ag ah mf aj ak al fb mg mh lu mi mj mk ml mm l mn mo mp mq mr ms mt n mu mv mw' />
+[29] (829,407)<button aria-label='Share Post' class='z fw ac fl af ag ah mf aj ak al fb mg mh lu mi mj mk ml mm l mn mo mp mq mr ms mt n mu mv mw' />
+[30] (492,709)<div class='ng nh fv ni bd nj' role='button'>Press enter or click to view image in full size />
+	Press enter or click to view image in full size
+	[31] (492,709)<div  />
+		[32] (492,708)<picture  />
+			[33] (492,709)<img class='bd me nk c' role='presentation' />
+Cloudflare WARP works great on Windows and macOS, but on Linux it only ships with a CLI.
+
+</current_dom>

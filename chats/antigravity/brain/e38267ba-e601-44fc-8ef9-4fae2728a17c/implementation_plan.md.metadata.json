@@ -1,0 +1,6 @@
+{
+  "artifactType":  "ARTIFACT_TYPE_IMPLEMENTATION_PLAN",
+  "summary":  "Implementation plan for fixing the AADSTS700016 error by patching onedriver with a whitelisted Client ID.",
+  "updatedAt":  "2026-04-22T20:13:04.744365619Z",
+  "requestFeedback":  true
+}

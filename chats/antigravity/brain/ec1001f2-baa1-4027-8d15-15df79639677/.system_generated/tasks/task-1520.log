@@ -1,0 +1,18 @@
+already connected to 192.168.86.31:5555
+WARNING: linker:
+WARNING: linker: /system/vendor/lib/hw/memtrack.clovertrail.so: unused DT entry:
+ type 0xf arg 0x130
+WARNING: linker: /system/vendor/lib/libsrv_um.so: unused DT entry: type 0xf arg
+0xbe3
+WARNING: linker: /system/vendor/lib/hw/memtrack.clovertrail.so has text relocati
+ons. This is wasting memory and prevents security hardening. Please fix.
+WARNING: linker: /system/vendor/lib/libsrv_um.so has text relocations. This is w
+asting memory and prevents security hardening. Please fix.
+WARNING: linker: /system/vendor/lib/hw/gralloc.clovertrail.so: unused DT entry:
+type 0xf arg 0x62a
+WARNING: linker: /system/vendor/lib/libpvr2d.so: unused DT entry: type 0xf arg 0
+x79b
+WARNING: linker: /system/vendor/lib/hw/gralloc.clovertrail.so has text relocatio
+ns. This is wasting memory and prevents security hardening. Please fix.
+WARNING: linker: /system/vendor/lib/libpvr2d.so has text relocations. This is wa
+sting memory and prevents security hardening. Please fix.

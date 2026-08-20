@@ -1,0 +1,15 @@
+[Unit]
+Description=Translation Kiosk Audio API (Faster-Whisper & PyAnnote)
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu
+Environment="HF_HOME=/mnt/models/pyannote-3.1/.cache/huggingface"
+ExecStart=/home/ubuntu/ai_kiosk/bin/python /home/ubuntu/audio_server.py
+Restart=on-failure
+RestartSec=15
+
+[Install]
+WantedBy=multi-user.target

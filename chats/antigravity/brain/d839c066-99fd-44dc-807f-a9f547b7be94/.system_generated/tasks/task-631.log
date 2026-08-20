@@ -1,0 +1,475 @@
+=== Checking original climate.tac attributes ===
+OUT: test
+
+ERR:
+
+=== Recent HA logs about climate/temperature ===
+  File "/usr/src/homeassistant/homeassistant/components/tuya/climate.py", line 2
+90, in async_set_temperature
+    await self._async_send_wrapper_updates(self._set_temperature, value)
+tuya_device_handlers.device_wrapper.exception.SetValueOutOfRangeError: Value `14
+47` (converted from float `144.68`) out of range: (160-880)
+tuya_device_handlers.type_information.PrepareSetValueError: Value `1447` (conver
+ted from float `144.68`) out of range: (160-880)
+  File "/usr/src/homeassistant/homeassistant/components/climate/__init__.py", li
+ne 856, in async_service_temperature_set
+    await entity.async_set_temperature(**kwargs)
+  File "/config/custom_components/climate_template/climate.py", line 856, in asy
+nc_set_temperature
+  File "/usr/src/homeassistant/homeassistant/components/climate/__init__.py", li
+ne 856, in async_service_temperature_set
+    await entity.async_set_temperature(**kwargs)
+  File "/usr/src/homeassistant/homeassistant/components/tuya/climate.py", line 2
+90, in async_set_temperature
+    await self._async_send_wrapper_updates(self._set_temperature, value)
+tuya_device_handlers.device_wrapper.exception.SetValueOutOfRangeError: Value `14
+47` (converted from float `144.68`) out of range: (160-880)
+2026-08-05 21:25:18.652 ERROR (MainThread) [homeassistant.helpers.script.lacgf_f
+ixed] LACGF Fixed: Error executing script. Unexpected error for call_service at
+pos 1: Value `1479` (converted from float `147.92000000000002`) out of range: (1
+60-880)
+tuya_device_handlers.type_information.PrepareSetValueError: Value `1479` (conver
+ted from float `147.92000000000002`) out of range: (160-880)
+  File "/usr/src/homeassistant/homeassistant/components/climate/__init__.py", li
+ne 856, in async_service_temperature_set
+    await entity.async_set_temperature(**kwargs)
+  File "/usr/src/homeassistant/homeassistant/components/tuya/climate.py", line 2
+90, in async_set_temperature
+    await self._async_send_wrapper_updates(self._set_temperature, value)
+tuya_device_handlers.device_wrapper.exception.SetValueOutOfRangeError: Value `14
+79` (converted from float `147.92000000000002`) out of range: (160-880)
+tuya_device_handlers.type_information.PrepareSetValueError: Value `1479` (conver
+ted from float `147.92000000000002`) out of range: (160-880)
+  File "/usr/src/homeassistant/homeassistant/components/climate/__init__.py", li
+ne 856, in async_service_temperature_set
+    await entity.async_set_temperature(**kwargs)
+  File "/config/custom_components/climate_template/climate.py", line 856, in asy
+nc_set_temperature
+  File "/usr/src/homeassistant/homeassistant/components/climate/__init__.py", li
+ne 856, in async_service_temperature_set
+    await entity.async_set_temperature(**kwargs)
+  File "/usr/src/homeassistant/homeassistant/components/tuya/climate.py", line 2
+90, in async_set_temperature
+    await self._async_send_wrapper_updates(self._set_temperature, value)
+tuya_device_handlers.device_wrapper.exception.SetValueOutOfRangeError: Value `14
+79` (converted from float `147.92000000000002`) out of range: (160-880)
+2026-08-05 21:26:56.570 WARNING (SyncWorker_0) [homeassistant.loader] We found a
+ custom integration climate_template which has not been tested by Home Assistant
+. This component might cause stability problems, be sure to disable it if you ex
+perience issues with Home Assistant
+2026-08-05 21:29:39.732 WARNING (SyncWorker_0) [homeassistant.loader] We found a
+ custom integration climate_template which has not been tested by Home Assistant
+. This component might cause stability problems, be sure to disable it if you ex
+perience issues with Home Assistant
+
+=== Checking Tuya device info ===
+{
+  "aliases": [],
+  "aliases_v2": [
+    null
+  ],
+  "area_id": null,
+  "categories": {},
+  "capabilities": {
+    "hvac_modes": [
+      "off",
+      "cool",
+      "heat",
+      "dry",
+      "fan_only",
+      "heat_cool"
+    ],
+    "min_temp": 16,
+    "max_temp": 88,
+    "target_temp_step": 0.5
+  },
+  "config_entry_id": "01KFENVNB87D1CF1Q1Z3V19K9J",
+  "config_subentry_id": null,
+  "created_at": "2026-01-20T21:44:35.973957+00:00",
+  "device_class": null,
+  "device_id": "22020df3250dbe3f634aacc0e82ee808",
+  "disabled_by": null,
+  "entity_category": null,
+  "entity_id": "climate.tac",
+  "hidden_by": "user",
+  "icon": null,
+  "id": "2204a81da85a01783f6c91b4af719d74",
+  "has_entity_name": true,
+  "labels": [],
+  "modified_at": "2026-07-23T09:59:58.938503+00:00",
+  "name": null,
+  "object_id_base": null,
+  "options": {
+    "conversation": {
+      "should_expose": true
+    }
+  },
+  "original_device_class": null,
+  "original_icon": null,
+  "original_name": null,
+  "platform": "tuya",
+  "suggested_object_id": null,
+  "supported_features": 385,
+  "translation_key": null,
+  "unique_id": "tuya.5878612048e7294d3bb0",
+  "previous_unique_id": null,
+  "unit_of_measurement": null
+}
+{
+  "aliases": [],
+  "aliases_v2": [
+    null
+  ],
+  "area_id": null,
+  "categories": {},
+  "capabilities": {
+    "hvac_modes": [
+      "off",
+      "cool",
+      "heat",
+      "dry",
+      "fan_only",
+      "heat_cool"
+    ],
+    "min_temp": 16,
+    "max_temp": 88,
+    "target_temp_step": 0.5
+  },
+  "config_entry_id": "01KFENVNB87D1CF1Q1Z3V19K9J",
+  "config_subentry_id": null,
+  "created_at": "2026-01-20T21:44:35.983135+00:00",
+  "device_class": null,
+  "device_id": "79d281e872df889c56738fb0ab178f37",
+  "disabled_by": null,
+  "entity_category": null,
+  "entity_id": "climate.bac",
+  "hidden_by": "user",
+  "icon": null,
+  "id": "511847e9d87d2d1b5797f9dbb42b1c57",
+  "has_entity_name": true,
+  "labels": [],
+  "modified_at": "2026-07-23T09:59:58.939526+00:00",
+  "name": null,
+  "object_id_base": null,
+  "options": {
+    "conversation": {
+      "should_expose": true
+    }
+  },
+  "original_device_class": null,
+  "original_icon": null,
+  "original_name": null,
+  "platform": "tuya",
+  "suggested_object_id": null,
+  "supported_features": 385,
+  "translation_key": null,
+  "unique_id": "tuya.0701226348e729666d8f",
+  "previous_unique_id": null,
+  "unit_of_measurement": null
+}
+{
+  "aliases": [],
+  "aliases_v2": [
+    null
+  ],
+  "area_id": null,
+  "categories": {},
+  "capabilities": {
+    "hvac_modes": [
+      "off",
+      "cool",
+      "heat",
+      "dry",
+      "fan_only",
+      "heat_cool"
+    ],
+    "min_temp": 16,
+    "max_temp": 88,
+    "target_temp_step": 0.5
+  },
+  "config_entry_id": "01KFENVNB87D1CF1Q1Z3V19K9J",
+  "config_subentry_id": null,
+  "created_at": "2026-01-20T21:44:35.984567+00:00",
+  "device_class": null,
+  "device_id": "819cd6e7cc4a6ccaadd6a7f0ef041900",
+  "disabled_by": null,
+  "entity_category": null,
+  "entity_id": "climate.dac",
+  "hidden_by": "user",
+  "icon": null,
+  "id": "ab8859cd330d55126edb52e8cc72c517",
+  "has_entity_name": true,
+  "labels": [],
+  "modified_at": "2026-07-23T09:59:58.943485+00:00",
+  "name": null,
+  "object_id_base": null,
+  "options": {
+    "conversation": {
+      "should_expose": true
+    }
+  },
+  "original_device_class": null,
+  "original_icon": null,
+  "original_name": null,
+  "platform": "tuya",
+  "suggested_object_id": null,
+  "supported_features": 385,
+  "translation_key": null,
+  "unique_id": "tuya.3776781148e7294cb496",
+  "previous_unique_id": null,
+  "unit_of_measurement": null
+}
+{
+  "aliases": [],
+  "aliases_v2": [
+    null
+  ],
+  "area_id": null,
+  "categories": {},
+  "capabilities": {
+    "hvac_modes": [
+      "off",
+      "cool",
+      "heat",
+      "dry",
+      "fan_only",
+      "heat_cool"
+    ],
+    "min_temp": 16.0,
+    "max_temp": 88.0,
+    "target_temp_step": 0.5
+  },
+  "config_entry_id": "01KFENVNB87D1CF1Q1Z3V19K9J",
+  "config_sube
+  "config_subentry_id": null,
+  "created_at": "2026-01-20T21:44:35.985443+00:00",
+  "device_class": null,
+  "device_id": "c19aebd6c4f2d4b7258d399bb507263b",
+  "disabled_by": null,
+  "entity_category": null,
+  "entity_id": "climate.lacgf",
+  "hidden_by": "user",
+  "icon": null,
+  "id": "bc8683084517556fca385519dbf774c3",
+  "has_entity_name": true,
+  "labels": [],
+  "modified_at": "2026-01-20T21:50:34.292686+00:00",
+  "name": null,
+  "object_id_base": null,
+  "options": {
+    "conversation": {
+      "should_expose": true
+    }
+  },
+  "original_device_class": null,
+  "original_icon": null,
+  "original_name": null,
+  "platform": "tuya",
+  "suggested_object_id": null,
+  "supported_features": 385,
+  "translation_key": null,
+  "unique_id": "tuya.4361047824d7ebe051bb",
+  "previous_unique_id": null,
+  "unit_of_measurement": null
+}
+{
+  "aliases": [],
+  "aliases_v2": [
+    null
+  ],
+  "area_id": "tahira_s_room",
+  "categories": {},
+  "capabilities": {
+    "hvac_modes": [
+      "off",
+      "cool",
+      "dry",
+      "fan_only"
+    ],
+    "min_temp": 16.0,
+    "max_temp": 31.0,
+    "target_temp_step": 1.0
+  },
+  "config_entry_id": null,
+  "config_subentry_id": null,
+  "created_at": "2026-07-23T00:16:08.991373+00:00",
+  "device_class": null,
+  "device_id": null,
+  "disabled_by": null,
+  "entity_category": null,
+  "entity_id": "climate.tac_fixed",
+  "hidden_by": null,
+  "icon": null,
+  "id": "92b0d9725b56ac60006bef1e6a97d332",
+  "has_entity_name": false,
+  "labels": [],
+  "modified_at": "2026-08-05T16:21:51.505329+00:00",
+  "name": "Tahira's Room AC",
+  "object_id_base": "TAC Fixed",
+  "options": {
+    "conversation": {
+      "should_expose": true
+    }
+  },
+  "original_device_class": null,
+  "original_icon": null,
+  "original_name": "Tahira's Room AC",
+  "platform": "climate_template",
+  "suggested_object_id": null,
+  "supported_features": 385,
+  "translation_key": null,
+  "unique_id": "virtual_tac",
+  "previous_unique_id": null,
+  "unit_of_measurement": null
+}
+{
+  "aliases": [],
+  "aliases_v2": [
+    null
+  ],
+  "area_id": "basement_room",
+  "categories": {},
+  "capabilities": {
+    "hvac_modes": [
+      "off",
+      "cool",
+      "dry",
+      "fan_only"
+    ],
+    "min_temp": 16.0,
+    "max_temp": 31.0,
+    "target_temp_step": 1.0
+  },
+  "config_entry_id": null,
+  "config_subentry_id": null,
+  "created_at": "2026-07-23T00:16:08.989378+00:00",
+  "device_class": null,
+  "device_id": null,
+  "disabled_by": null,
+  "entity_category": null,
+  "entity_id": "climate.bac_fixed",
+  "hidden_by": null,
+  "icon": null,
+  "id": "435844d62042f05c1d230eb5eb94624d",
+  "has_entity_name": false,
+  "labels": [],
+  "modified_at": "2026-08-05T16:21:51.506056+00:00",
+  "name": "Basement Room AC",
+  "object_id_base": "BAC Fixed",
+  "options": {
+    "conversation": {
+      "should_expose": true
+    }
+  },
+  "original_device_class": null,
+  "original_icon": null,
+  "original_name": "Basement Room AC",
+  "platform": "climate_template",
+  "suggested_object_id": null,
+  "supported_features": 385,
+  "translation_key": null,
+  "unique_id": "virtual_bac",
+  "previous_unique_id": null,
+  "unit_of_measurement": null
+}
+{
+  "aliases": [],
+  "aliases_v2": [
+    null
+  ],
+  "area_id": "drawiing_room",
+  "categories": {},
+  "capabilities": {
+    "hvac_modes": [
+      "off",
+      "cool",
+      "dry",
+      "fan_only"
+    ],
+    "min_temp": 16.0,
+    "max_temp": 31.0,
+    "target_temp_step": 1.0
+  },
+  "config_entry_id": null,
+  "config_subentry_id": null,
+  "created_at": "2026-07-23T00:16:08.990155+00:00",
+  "device_class": null,
+  "device_id": null,
+  "disabled_by": null,
+  "entity_category": null,
+  "entity_id": "climate.dac_fixed",
+  "hidden_by": null,
+  "icon": null,
+  "id": "e500fc5de96353e285264f8fc4d5f850",
+  "has_entity_name": false,
+  "labels": [],
+  "modified_at": "2026-08-05T16:21:51.506686+00:00",
+  "name": "Drawing Room Ac",
+  "object_id_base": "DAC Fixed",
+  "options": {
+    "conversation": {
+      "shou
+      "should_expose": true
+    }
+  },
+  "original_device_class": null,
+  "original_icon": null,
+  "original_name": "Drawing Room Ac",
+  "platform": "climate_template",
+  "suggested_object_id": null,
+  "supported_features": 385,
+  "translation_key": null,
+  "unique_id": "virtual_dac",
+  "previous_unique_id": null,
+  "unit_of_measurement": null
+}
+{
+  "aliases": [],
+  "aliases_v2": [
+    null
+  ],
+  "area_id": "living_room",
+  "categories": {},
+  "capabilities": {
+    "hvac_modes": [
+      "off",
+      "cool",
+      "dry",
+      "fan_only"
+    ],
+    "min_temp": 16.0,
+    "max_temp": 31.0,
+    "target_temp_step": 1.0
+  },
+  "config_entry_id": null,
+  "config_subentry_id": null,
+  "created_at": "2026-07-23T00:16:08.990737+00:00",
+  "device_class": null,
+  "device_id": null,
+  "disabled_by": null,
+  "entity_category": null,
+  "entity_id": "climate.lacgf_fixed",
+  "hidden_by": null,
+  "icon": null,
+  "id": "7e840623f0c0e96a81c04e942b8528e4",
+  "has_entity_name": false,
+  "labels": [],
+  "modified_at": "2026-08-05T16:21:51.507304+00:00",
+  "name": "Living Room AC",
+  "object_id_base": "LACGF Fixed",
+  "options": {
+    "conversation": {
+      "should_expose": true
+    }
+  },
+  "original_device_class": null,
+  "original_icon": null,
+  "original_name": "Living Room AC",
+  "platform": "climate_template",
+  "suggested_object_id": null,
+  "supported_features": 385,
+  "translation_key": null,
+  "unique_id": "virtual_lacgf",
+  "previous_unique_id": null,
+  "unit_of_measurement": null
+}

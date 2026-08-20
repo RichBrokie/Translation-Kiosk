@@ -1,0 +1,24 @@
+--- uptime -p ---
+up 1 minute
+--- qm list ---
+VMID NAME                 STATUS     MEM(MB)    BOOTDISK(GB) PID
+       100 haos-16.3            running    4096              32.00 1232
+       104 win11                stopped    4096              32.00 0
+--- pct list ---
+VMID       Status     Lock         Name
+101        running                 casaos
+102        running                 cloudflared
+103        running                 website
+105        running                 onedrive
+106        stopped                 n8n
+107        running                 model-downloader
+--- free -m ---
+total        used        free      shared  buff/cache   available
+Mem:            7785        6662         285         597        1697        1122
+Swap:           7815        1148        6667
+--- systemctl status download-monitor.service --no-pager | grep Active ---
+Active: active (running) since Fri 2026-08-07 00:16:22 PKT; 1min 46s ago
+--- pct exec 107 -- systemctl status model-download.service --no-pager | grep Ac
+tive ---
+Active: activating (auto-restart) (Result: exit-code) since Thu 2026-08-06 19:18
+:08 UTC; 804ms ago

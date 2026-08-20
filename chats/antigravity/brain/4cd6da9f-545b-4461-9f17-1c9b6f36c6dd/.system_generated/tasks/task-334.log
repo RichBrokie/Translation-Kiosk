@@ -1,0 +1,224 @@
+
+=== System Load ===
+ 06:35:58 up  7:19,  2 users,  load average: 2.05, 2.39, 2.13
+               total        used        free      shared  buff/cache   available
+Mem:            7785        7274         265        1690        2208         510
+Swap:           7815        4929        2886
+
+=== Storage Usage ===
+Filesystem                    Size  Used Avail Use% Mounted on
+udev                          3.2G     0  3.2G   0% /dev
+tmpfs                         779M  2.9M  776M   1% /run
+/dev/mapper/pve-root           68G   56G  9.3G  86% /
+tmpfs                         3.9G   31M  3.8G   1% /dev/shm
+efivarfs                      150K   82K   63K  57% /sys/firmware/efi/efivars
+tmpfs                         5.0M  8.0K  5.0M   1% /run/lock
+tmpfs                         1.0M     0  1.0M   0% /run/credentials/systemd-jou
+rnald.service
+tmpfs                         3.9G  3.8G   45M  99% /tmp
+/dev/nvme0n1p2               1022M  9.1M 1013M   1% /boot/efi
+/dev/fuse                     128M   28K  128M   1% /etc/pve
+tmpfs                         1.0M     0  1.0M   0% /run/credentials/getty@tty1.
+service
+tmpfs                         779M   16K  779M   1% /run/user/1000
+lums_ondemand:ProxmoxBackups  1.0T   63G  962G   7% /mnt/lums-cloud
+tmpfs                         779M  8.0K  779M   1% /run/user/0
+
+  LV              VG  Attr       LSize    Pool Origin Data%  Meta%  Move Log Cpy
+%Sync Convert
+  data            pve twi-aotz-- <141.50g             32.36  2.13
+
+  [data_tdata]    pve Twi-ao---- <141.50g
+
+  [data_tmeta]    pve ewi-ao----    1.44g
+
+  [lvol0_pmspare] pve ewi-------    1.44g
+
+  root            pve -wi-ao----  <69.46g
+
+  swap            pve -wi-ao----    7.63g
+
+  vm-100-disk-0   pve Vwi-aotz--   32.00g data        33.20
+
+  vm-100-disk-1   pve Vwi-aotz--    4.00m data        14.06
+
+  vm-101-disk-0   pve Vwi-aotz--    8.00g data        96.36
+
+  vm-102-disk-0   pve Vwi-aotz--    2.00g data        93.18
+
+  vm-103-disk-0   pve Vwi-aotz--    2.00g data        50.61
+
+  vm-104-disk-0   pve Vwi---tz--   32.00g data
+
+  vm-105-disk-0   pve Vwi-aotz--    8.00g data        17.07
+
+  vm-106-disk-0   pve Vwi---tz--   10.00g data
+
+  vm-107-disk-0   pve Vwi-a-tz--    8.00g data        22.74
+
+
+
+=== System Updates ===
+143 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
+
+=== VM / LXC Status ===
+      VMID NAME                 STATUS     MEM(MB)    BOOTDISK(GB) PID
+       100 haos-16.3            running    4096              32.00 1212
+       104 win11                stopped    4096              32.00 0
+VMID       Status     Lock         Name
+101        running                 casaos
+102        running                 cloudflared
+103        running                 website
+105        running                 onedrive
+106        stopped                 n8n
+107        stopped                 model-downloader
+
+=== Check for Failed Systemd Services ===
+  UNIT                  LOAD   ACTIVE SUB    DESCRIPTION
+● manual-backup.service loaded failed failed [systemd-run] /usr/bin/vzdump 103 1
+00 101 102 --compress zstd --mailnotification always --mailto 29100095@lums.edu.
+pk --mode snapshot --notes-template {{guestname}} --notification-mode legacy-sen
+dmail --prune-backups keep-last=3 --storage LUMS-Offsite
+
+Legend: LOAD   → R
+Legend: LOAD   → Reflects whether the unit definition was properly loaded.
+        ACTIVE → The high-level unit activation state, i.e. generalization of SU
+B.
+        SUB    → The low-level unit activation state, values depend on unit type
+.
+
+1 loaded units listed.
+
+=== Check for Hardware/System Errors ===
+[Fri Aug  7 23:16:54 2026] bluetooth hci0: Direct firmware load for qca/rampatch
+_usb_00000302.bin failed with error -2
+[Fri Aug  7 23:16:54 2026] Bluetooth: hci0: failed to request rampatch file: qca
+/rampatch_usb_00000302.bin (-2)
+[Fri Aug  7 23:16:55 2026] i915 0000:00:02.0: [drm] [ENCODER:109:DDI A/PHY A] fa
+iled to retrieve link info, disabling eDP
+[Fri Aug  7 23:16:56 2026] hp_bioscfg: Returned error 0x3, "Invalid command valu
+e/Feature not supported"
+[Fri Aug  7 23:16:59 2026] warning: `glances' uses wireless extensions which wil
+l stop working for Wi-Fi 7 hardware; use nl80211
+[Fri Aug  7 23:17:06 2026] EXT4-fs warning (device dm-8): ext4_multi_mount_prote
+ct:324: MMP interval 42 higher than expected, please wait.
+[Fri Aug  7 23:17:06 2026] EXT4-fs warning (device dm-9): ext4_multi_mount_prote
+ct:324: MMP interval 42 higher than expected, please wait.
+[Fri Aug  7 23:17:09 2026] EXT4-fs warning (device dm-10): ext4_multi_mount_prot
+ect:324: MMP interval 42 higher than expected, please wait.
+[Fri Aug  7 23:17:53 2026] EXT4-fs warning (device dm-12): ext4_multi_mount_prot
+ect:324: MMP interval 42 higher than expected, please wait.
+[Fri Aug  7 23:17:56 2026] audit: type=1400 audit(1786126676.483:141): apparmor=
+"STATUS" operation="profile_replace" info="not policy admin" error=-13 label="lx
+c-107_</var/lib/lxc>//&:lxc-107_<-var-lib-lxc>:unconfined" pid=3432 comm="apparm
+or_parser"
+[Fri Aug  7 23:17:56 2026] audit: type=1400 audit(1786126676.491:142): apparmor=
+"STATUS" operation="profile_replace" info="not policy admin" error=-13 label="lx
+c-107_</var/lib/lxc>//&:lxc-107_<-var-lib-lxc>:unconfined" pid=3431 comm="apparm
+or_parser"
+[Fri Aug  7 23:17:56 2026] audit: type=1400 audit(1786126676.495:143): apparmor=
+"STATUS" operation="profile_replace" info="not policy admin" error=-13 label="lx
+c-107_</var/lib/lxc>//&:lxc-107_<-var-lib-lxc>:unconfined" pid=3435 comm="apparm
+or_parser"
+[Fri Aug  7 23:17:56 2026] audit: type=1400 audit(1786126676.511:144): apparmor=
+"STATUS" operation="profile_replace" info="not policy admin" error=-13 label="lx
+c-107_</var/lib/lxc>//&:lxc-107_<-var-lib-lxc>:unconfined" pid=3445 comm="apparm
+or_parser"
+[Fri Aug  7 23:17:56 2026] audit: type=1400 audit(1786126676.520:145): apparmor=
+"STATUS" operation="profile_replace" info="not policy admin" error=-13 label="lx
+c-107_</var/lib/lxc>//&:lxc-107_<-var-lib-lxc>:unconfined" pid=3442 comm="apparm
+or_parser"
+[Fri Aug  7 23:17:56 2026] audit: type=1400 audit(1786126676.523:146): apparmor=
+"STATUS" operation="profile_replace" info="not policy admin" error=-13 label="lx
+c-107_</var/lib/lxc>//&:lxc-107_<-var-lib-lxc>:unconfined" pid=3451 comm="apparm
+or_parser"
+[Fri Aug  7 23:17:56 2026] audit: type=1400 audit(1786126676.589:147): apparmor=
+"STATUS" operation="profile_replace" info="not policy admin" error=-13 label="lx
+c-107_</var/lib/lxc>//&:lxc-107_<-var-lib-lxc>:unconfined" pid=3479 comm="apparm
+or_parser"
+[Fri Aug  7 23:17:56 2026] audit: type=1400 audit(1786126676.621:148): apparmor=
+"STATUS" operation="profile_replace" info="not policy admin" error=-13 label="lx
+c-107_</var/lib/lxc>//&:lxc-107_<-var-lib-lxc>:unconfined" pid=3486 comm="apparm
+or_parser"
+[Fri Aug  7 23:17:56 2026] audit: type=1400 audit(1786126676.622:149): apparmor=
+"STATUS" operation="profile_replace" info="not policy admin" error=-13 label="lx
+c-107_</var/lib/lxc>//&:lxc-107_<-var-lib-lxc>:unconfined" pid=3489 comm="apparm
+or_parser"
+[Fri Aug  7 23:17:56 2026] audit: type=1400 audit(1786126676.625:150): apparmor=
+"STATUS" operation="profile_replace" info="not policy admin" error=-13 label="lx
+c-107_</var/lib/lxc>//&:lxc-107_<-var-lib-lxc>:unconfined" pid=3492 comm="apparm
+or_parser"
+[Fri Aug  7 23:18:02 2026] audit: type=1400 audit(1786126682.306:241): apparmor=
+"STATUS" operati
+"STATUS" operation="profile_replace" info="not policy admin" error=-13 label="lx
+c-107_</var/lib/lxc>//&:lxc-107_<-var-lib-lxc>:unconfined" pid=4121 comm="apparm
+or_parser"
+
+Aug 07 23:16:53 proxmox kernel: x86/cpu: SGX disabled or unsupported by BIOS.
+Aug 07 23:16:53 proxmox systemd-udevd[368]: /usr/lib/udev/rules.d/90-alsa-restor
+e.rules:18 GOTO="alsa_restore_std" has no matching label, ignoring.
+Aug 07 23:16:53 proxmox systemd-udevd[368]: /usr/lib/udev/rules.d/90-alsa-restor
+e.rules:22 GOTO="alsa_restore_std" has no matching label, ignoring.
+Aug 07 23:16:54 proxmox kernel: Bluetooth: hci0: failed to request rampatch file
+: qca/rampatch_usb_00000302.bin (-2)
+Aug 07 23:16:56 proxmox blkmapd[671]: open pipe file /run/rpc_pipefs/nfs/blockla
+yout failed: No such file or directory
+Aug 07 23:18:23 proxmox systemd[1]: Timed out waiting for device dev-disk-by\x2d
+uuid-2C960A7A960A4534.device - /dev/disk/by-uuid/2C960A7A960A4534.
+░░ Subject: A start job for unit dev-disk-by\x2duuid-2C960A7A960A4534.device has
+ failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit dev-disk-by\x2duuid-2C960A7A960A4534.device has finished
+ with a failure.
+░░
+░░ The job identifier is 103 and the job result is timeout.
+Aug 08 00:03:09 proxmox kernel: EXT4-fs (dm-13): write access unavailable, skipp
+ing orphan cleanup
+Aug 08 00:05:26 proxmox kernel: EXT4-fs (dm-13): write access unavailable, skipp
+ing orphan cleanup
+Aug 08 00:05:57 proxmox pvescheduler[24161]: ERROR: Backup of VM 103 failed - lv
+create snapshot 'pve/snap_vm-103-disk-0_vzdump' error:   Logical Volume "snap_vm
+-103-disk-0_vzdump" already exists in volume group "pve"
+Aug 08 00:05:57 proxmox pvescheduler[24161]: job errors
+Aug 08 05:48:43 proxmox pvedaemon[1147]: authentication failure; rhost=::ffff:19
+2.168.86.247 user=root@pam msg=Authentication failure
+Aug 08 06:11:24 proxmox pveproxy[196744]: got inotify poll request in wrong proc
+ess - disabling inotify
+Aug 08 06:33:32 proxmox kernel: EXT4-fs (dm-13): write access unavailable, skipp
+ing orphan cleanup
+Aug 08 06:33:41 proxmox rclone[192427]: ERROR : IO error: write /tmp/rclone/vfs/
+lums_ondemand/ProxmoxBackups/dump/vzdump-lxc-101-2026_08_08-06_33_31.tar.dat: no
+ space left on device
+Aug 08 06:33:42 proxmox vzdump[207401]: ERROR: Backup of VM 101 failed - command
+ 'set -o pipefail && lxc-usernsexec -m u:0:100000:65536 -m g:0:100000:65536 -- t
+ar cpf - --totals --one-file-system -p --sparse --numeric-owner --acls --xattrs
+'--xattrs-include=user.*' '--xattrs-include=security.capability' '--warning=no-f
+ile-ignored' '--warning=no-xattr-write' --one-file-system '--warning=no-file-ign
+ored' '--directory=/var/tmp/vzdumptmp207401_101' ./etc/vzdump/pct.conf ./etc/vzd
+ump/pct.fw '--directory=/mnt/vzsnap0' --no-anchored '--exclude=lost+found' --anc
+hored '--exclude=./tmp/?*' '--exclude=./var/tmp/?*' '--exclude=./var/run/?*.pid'
+ ./ | zstd '--threads=1' >/mnt/lums-cloud/dump/vzdump-lxc-101-2026_08_08-06_33_3
+1.tar.dat' failed: exit code 70
+Aug 08 06:33:42 proxmox kernel: EXT4-fs (dm-13): write access unavailable, skipp
+ing orphan cleanup
+Aug 08 06:33:58 proxmox kernel: EXT4-fs (dm-13): write access unavailable, skipp
+ing orphan cleanup
+Aug 08 06:34:00 proxmox rclone[192427]: ERROR : IO error: write /tmp/rclone/vfs/
+lums_ondemand/ProxmoxBackups/dump/vzdump-lxc-103-2026_08_08-06_33_58.tar.dat: no
+ space left on device
+Aug 08 06:34:00 proxmox vzdump[207401]: ERROR: Backup of VM 103 failed - command
+ 'set -o pipefail && lxc-usernsexec -m u:0:100000:65536 -m g:0:100000:65536 -- t
+ar cpf - --totals --one-file-system -p --sparse --numeric-owner --acls --xattrs
+'--xattrs-include=user.*' '--xattrs-include=security.capability' '--warning=no-f
+ile-ignored' '--warning=no-xattr-write' --one-file-system '--warning=no-file-ign
+ored' '--directory=/var/tmp/vzdumptmp207401_103' ./etc/vzdump/pct.conf ./etc/vzd
+ump/pct.fw '--directory=/mnt/vzsnap0' --no-anchored '--exclude=lost+found' --anc
+hored '--exclude=./tmp/?*' '--exclude=./var/tmp/?*' '--exclude=./var/run/?*.pid'
+ ./ | zstd '--threa
+ ./ | zstd '--threads=1' >/mnt/lums-cloud/dump/vzdump-lxc-103-2026_08_08-06_33_5
+8.tar.dat' failed: exit code 70
+Aug 08 06:34:00 proxmox vzdump[207401]: job errors
+Aug 08 06:34:00 proxmox vzdump[207397]: <root@pam> end task UPID:proxmox:00032A2
+9:0027D94E:6A768715:vzdump::root@pam: job errors

@@ -1,0 +1,22 @@
+Step 1: Adding template climate entities...
+  -> Template sensors added to configuration.yaml
+
+Step 2: Creating kiosk dashboard...
+  -> Kiosk dashboard created
+Step 3: Creating kiosk user...
+/home/ahmad/antigravity/ha_kiosk_setup.py:447: DeprecationWarning: datetime.date
+time.utcnow() is deprecated and scheduled for removal in a future version. Use t
+imezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datet
+ime.UTC).
+  "created_at": datetime.datetime.utcnow().isoformat(),
+  -> Kiosk user created (username: kiosk, password: kiosk)
+  -> User ID: 508b7b044e89424e8223fcc4ad118e92
+
+Step 4: Creating kiosk theme...
+  -> Kiosk dark theme created
+
+Step 5: Restarting Home Assistant...
+[DONE] Kiosk setup complete!
+  Dashboard: /dashboard-kiosk
+  User: kiosk / kiosk
+  Theme: kiosk_dark (set via user profile)

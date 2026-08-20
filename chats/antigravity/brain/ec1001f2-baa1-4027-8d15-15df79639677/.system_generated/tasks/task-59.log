@@ -1,0 +1,8 @@
+Successfully scheduled one-shot timer.
+Expected to fire at: 2026-07-23T03:17:42+05:00
+Prompt: Check if the HA peak hours setup task has completed.
+
+[2026-07-23T03:16:12+05:00] Still waiting. Remaining time: 1m30s
+[2026-07-23T03:16:42+05:00] Still waiting. Remaining time: 1m0s
+[2026-07-23T03:17:12+05:00] Still waiting. Remaining time: 30s
+[2026-07-23T03:17:42+05:00] Timer fired.

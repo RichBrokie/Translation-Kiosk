@@ -1,0 +1,10 @@
+
+Aug 08 06:29:17 proxmox postfix/pickup[205897]: 3A80D242054: uid=0 from=<root>
+Aug 08 06:29:17 proxmox postfix/cleanup[205903]: 3A80D242054: message-id=<202608
+08012917.3A80D242054@proxmox.hp>
+Aug 08 06:29:17 proxmox postfix/qmgr[205898]: 3A80D242054: from=<ahmad@creativef
+actory.pk>, size=355, nrcpt=1 (queue active)
+Aug 08 06:29:23 proxmox postfix/smtp[205906]: 3A80D242054: to=<29100095@lums.edu
+.pk>, relay=smtp.zoho.com[136.143.182.56]:465, delay=6, delays=0.02/0.02/2.3/3.7
+, dsn=2.0.0, status=sent (250 Message received)
+Aug 08 06:29:23 proxmox postfix/qmgr[205898]: 3A80D242054: removed

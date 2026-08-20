@@ -1,0 +1,9 @@
+- [ ] Create sysctl performance config
+- [ ] Create optimization apply script (needs sudo)
+  - [ ] Disable unnecessary services
+  - [ ] Update GRUB config
+  - [ ] Update fstab with btrfs optimizations
+  - [ ] Update TLP config
+  - [ ] Set snap refresh timer
+- [ ] User runs the apply script with sudo
+- [ ] Verify changes applied

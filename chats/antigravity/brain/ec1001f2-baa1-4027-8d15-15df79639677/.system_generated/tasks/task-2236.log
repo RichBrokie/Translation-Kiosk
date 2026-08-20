@@ -1,0 +1,6 @@
+OUT: wyoming-wyze-camera
+230c8118e591e41342928d0b6f0f077cbc2228e6889beeeb648f08104455ee4d
+ERR:
+STATUS: INFO:root:Ready
+INFO:root:Connected to services
+VOLUME: [Parsed_volumedetect_0 @ 0x7f6d6c001a40] mean_volume: -42.7 dB

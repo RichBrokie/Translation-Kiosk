@@ -1,0 +1,79 @@
+----------------------------------------
+Starting batch for: Standard Arabic
+Folder: Standard Arabic Talks
+Subtitles: en.*, ar.*
+[youtube:search] Extracting URL: ytsearch50:TED talk in Standard Arabic
+ERROR: Invalid filter part ' subtitles.en'
+----------------------------------------
+Starting batch for: Russian
+Folder: Russian Talks
+Subtitles: en.*, ru.*
+[youtube:search] Extracting URL: ytsearch50:TED talk in Russian
+ERROR: Invalid filter part ' subtitles.en'
+----------------------------------------
+Starting batch for: Mandarin Chinese
+Folder: Mandarin Chinese Talks
+Subtitles: en.*, zh.*
+[youtube:search] Extracting URL: ytsearch50:TED talk in Mandarin Chinese
+ERROR: Invalid filter part ' subtitles.en'
+----------------------------------------
+Starting batch for: Portuguese
+Folder: Portuguese Talks
+Subtitles: en.*, pt.*
+[youtube:search] Extracting URL: ytsearch50:TED talk in Portuguese
+ERROR: Invalid filter part ' subtitles.en'
+----------------------------------------
+Starting batch for: Hindi
+Folder: Hindi Talks
+Subtitles: en.*, hi.*
+[youtube:search] Extracting URL: ytsearch50:TED talk in Hindi
+ERROR: Invalid filter part ' subtitles.en'
+----------------------------------------
+Starting batch for: German
+Folder: German Talks
+Subtitles: en.*, de.*
+[youtube:search] Extracting URL: ytsearch50:TED talk in German
+ERROR: Invalid filter part ' subtitles.en'
+----------------------------------------
+Starting batch for: French
+Folder: French Talks
+Subtitles: en.*, fr.*
+[youtube:search] Extracting URL: ytsearch50:TED talk in French
+ERROR: Invalid filter part ' subtitles.en'
+----------------------------------------
+Starting batch for: Japanese
+Folder: Japanese Talks
+Subtitles: en.*, ja.*
+[youtube:search] Extracting URL: ytsearch50:TED talk in Japanese
+ERROR: Invalid filter part ' subtitles.en'
+----------------------------------------
+Starting batch for: Turkish
+Folder: Turkish Talks
+Subtitles: en.*, tr.*
+[youtube:search] Extracting URL: ytsearch50:TED talk in Turkish
+ERROR: Invalid filter part ' subtitles.en'
+----------------------------------------
+Starting batch for: Indonesian
+Folder: Indonesian Talks
+Subtitles: en.*, id.*
+[youtube:search] Extracting URL: ytsearch50:TED talk in Indonesian
+ERROR: Invalid filter part ' subtitles.en'
+----------------------------------------
+Starting batch for: Urdu
+Folder: Urdu Talks
+Subtitles: en.*, ur.*
+[youtube:search] Extracting URL: ytsearch50:TED talk in Urdu
+ERROR: Invalid filter part ' subtitles.en'
+----------------------------------------
+Starting batch for: Spanish
+Folder: Spanish Talks
+Subtitles: en.*, es.*
+[youtube:search] Extracting URL: ytsearch50:TED talk in Spanish
+ERROR: Invalid filter part ' subtitles.en'
+----------------------------------------
+Starting batch for: Bengali
+Folder: Bengali Talks
+Subtitles: en.*, bn.*
+[youtube:search] Extracting URL: ytsearch50:TED talk in Bengali
+ERROR: Invalid filter part ' subtitles.en'
+ALL 13 LANGUAGES COMPLETED SUCCESSFULLY!

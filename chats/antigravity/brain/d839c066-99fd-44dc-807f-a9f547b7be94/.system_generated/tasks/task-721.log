@@ -1,0 +1,14 @@
+=== Checking configuration.yaml ===
+Testing configuration at /config
+
+Exception ignored in: <function BufferedFile.__del__ at 0x765632dd2c00>
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/paramiko/file.py", line 66, in __del__
+  File "/usr/lib/python3/dist-packages/paramiko/channel.py", line 1392, in close
+  File "/usr/lib/python3/dist-packages/paramiko/channel.py", line 991, in shutdo
+wn_write
+  File "/usr/lib/python3/dist-packages/paramiko/channel.py", line 967, in shutdo
+wn
+  File "/usr/lib/python3/dist-packages/paramiko/transport.py", line 1931, in _se
+nd_user_message
+AttributeError: 'NoneType' object has no attribute 'time'

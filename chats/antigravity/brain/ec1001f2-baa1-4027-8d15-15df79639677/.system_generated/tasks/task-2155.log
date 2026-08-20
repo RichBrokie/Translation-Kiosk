@@ -1,0 +1,29 @@
+Restarting openWakeWord...
+app_core_openwakeword
+
+Restarting satellite...
+wyoming-wyze-camera
+
+=== HA CORE LOGS after restart ===
+2026-08-02 17:39:33.353 WARNING (MainThread) [custom_components.voice_satellite.
+assist_satellite] TTS proxy returned 500 for 'Old Tab'
+
+=== SATELLITE LOGS after restart ===
+INFO:root:Ready
+INFO:root:Connected to services
+INFO:root:Streaming audio
+INFO:root:Ready
+INFO:root:Connected to services
+INFO:root:Streaming audio
+
+=== OWW LOGS after restart ===
+s6-rc: info: service legacy-cont-init: starting
+s6-rc: info: service legacy-cont-init successfully started
+s6-rc: info: service openwakeword: starting
+s6-rc: info: service openwakeword successfully started
+s6-rc: info: service discovery: starting
+INFO:root:Ready
+[17:40:02] INFO: Successfully sent discovery information to Home Assistant.
+s6-rc: info: service discovery successfully started
+s6-rc: info: service legacy-services: starting
+s6-rc: info: service legacy-services successfully started

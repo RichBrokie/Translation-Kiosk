@@ -1,0 +1,5 @@
+
+============================================================
+CMD: sudo curl -s -X POST --unix-socket /var/run/docker.sock 'http://localhost/c
+ontainers/homeassistant/restart'
+============================================================

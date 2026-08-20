@@ -1,0 +1,18 @@
+
+dir: local
+        path /var/lib/vz
+        content import,iso,vztmpl,backup
+
+lvmthin: local-lvm
+        thinpool data
+        vgname pve
+        content rootdir,images
+
+dir: LUMS-Offsite
+        path /mnt/lums-cloud
+        content backup
+        prune-backups keep-all=1
+        shared 0
+
+---
+no crontab for root

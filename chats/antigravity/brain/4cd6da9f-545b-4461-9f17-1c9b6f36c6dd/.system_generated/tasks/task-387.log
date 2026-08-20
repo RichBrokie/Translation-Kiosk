@@ -1,0 +1,31 @@
+
+vzdump: backup-b0ca3ea1-ea8a
+        schedule daily
+        compress zstd
+        enabled 1
+        fleecing 0
+        mailnotification always
+        mailto 29100095@lums.edu.pk
+        mode snapshot
+        node proxmox
+        notes-template {{guestname}}
+        notification-mode legacy-sendmail
+        prune-backups keep-last=3
+        repeat-missed 0
+        storage local
+        vmid 100,101,102,103
+
+vzdump: backup-db2342ea-22cd
+        schedule sun 01:00
+        compress zstd
+        enabled 1
+        fleecing 0
+        mailnotification always
+        mailto 29100095@lums.edu.pk
+        mode snapshot
+        node proxmox
+        notes-template {{guestname}}
+        notification-mode legacy-sendmail
+        prune-backups keep-last=3
+        storage LUMS-Offsite
+        vmid 103,100,101,102

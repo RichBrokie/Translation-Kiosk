@@ -1,0 +1,18 @@
+
+Checking lxc-103.log
+2026-08-08 07:07:02 INFO: Starting Backup of VM 103 (lxc)
+2026-08-08 07:07:02 INFO: status = running
+2026-08-08 07:07:02 INFO: CT Name: website
+2026-08-08 07:07:02 INFO: including mount point rootfs ('/') in backup
+2026-08-08 07:07:02 INFO: backup mode: snapshot
+2026-08-08 07:07:02 INFO: ionice priority: 7
+2026-08-08 07:07:02 INFO: create storage snapshot 'vzdump'
+2026-08-08 07:07:02 INFO: creating vzdump archive '/mnt/lums-cloud/dump/vzdump-l
+xc-103-2026_08_08-07_07_02.tar.zst'
+2026-08-08 07:07:11 INFO: Total bytes written: 876032000 (836MiB, 102MiB/s)
+2026-08-08 07:07:11 INFO: archive file size: 208MB
+2026-08-08 07:07:11 INFO: adding notes to backup
+2026-08-08 07:07:11 INFO: prune older backups with retention: keep-last=3
+2026-08-08 07:07:11 INFO: pruned 0 backup(s)
+2026-08-08 07:07:11 INFO: cleanup temporary 'vzdump' snapshot
+2026-08-08 07:07:11 INFO: Finished Backup of VM 103 (00:00:09)

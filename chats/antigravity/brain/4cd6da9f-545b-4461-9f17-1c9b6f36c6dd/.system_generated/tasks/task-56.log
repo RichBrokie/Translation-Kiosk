@@ -1,0 +1,16 @@
+
+---
+2026/08/08 05:57:35 NOTICE: Config file "/root/.config/rclone/rclone.conf" not f
+ound - using defaults
+---
+total 12
+drwxrwxrwx 3 100000 100000 4096 Apr 18 04:41 .
+drwxr-xr-x 5 root   root   4096 Aug  6 22:52 ..
+drwxrwxrwx 2 100000 100000 4096 Aug  2 01:04 dump
+---
+# <file system> <mount point> <type> <options> <dump> <pass>
+/dev/pve/root / ext4 errors=remount-ro 0 1
+UUID=EC01-7475 /boot/efi vfat defaults 0 1
+/dev/pve/swap none swap sw 0 0
+proc /proc proc defaults 0 0
+UUID=2C960A7A960A4534 /mnt/hdd ntfs-3g defaults,nofail 0 0
