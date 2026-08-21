@@ -1,5 +1,0 @@
-{
-  "artifactType":  "ARTIFACT_TYPE_WALKTHROUGH",
-  "summary":  "Complete reference guide for the user's Evolution API setup on CasaOS, covering:\n- Current system status and what was fixed (disk full → 58% used)\n- API credentials and connection details\n- All messaging capabilities: text, images, documents, audio, location, contacts, buttons, polls, stickers\n- Webhook configuration for receiving messages in Make.com\n- 6 practical automation ideas (auto-reply bot, CRM integration, order notifications, appointment reminders, lead capture, support tickets)\n- Full API endpoint reference table\n- Maintenance tips for preventing disk-full issues",
-  "updatedAt":  "2026-06-24T20:14:13.514497543Z"
-}

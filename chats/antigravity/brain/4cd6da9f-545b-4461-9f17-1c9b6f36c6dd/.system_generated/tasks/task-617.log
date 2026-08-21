@@ -1,7 +1,0 @@
-2026/08/08 07:02:41 NOTICE: Make sure your Redirect URL is set to "http://localh
-ost:53682/" in your custom config.
-2026/08/08 07:02:41 NOTICE: If your browser doesn't open automatically go to the
- following link: http://127.0.0.1:53682/auth?state=FNyY2w7sgQsgnMIs26JlZQ
-2026/08/08 07:02:41 NOTICE: Log in and authorize rclone for access
-2026/08/08 07:02:41 NOTICE: Waiting for code...
-2026/08/08 07:02:46 NOTICE: Got code

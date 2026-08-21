@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Translation Kiosk — Admin Diagnostics & Telemetry</title>
+  <link rel="stylesheet" href="/static/css/admin.css">
+</head>
+<body>
+  <div class="admin-wrapper">
+    <!-- Header -->
+    <header class="admin-header">
+      <div class="header-left">
+        <h1 class="header-title">⚙️ Translation Kiosk Diagnostics</h1>
+        <span id="badge-ws-status" class="badge-status">
+          <span class="dot">●</span> Telemetry Connected
+        </span>
+      </div>
+      <div class="header-right">
+        <span id="uptime-display" class="kpi-sub" style="font-family: var(--font-mono);">Uptime: 0s</span>
+        <a href="/" class="btn-nav" target="_blank">📺 Open Public Kiosk</a>
+      </div>
+    </header>
+
+    <!-- KPI Summary Grid -->
+    <section class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-title">Audio Chunks Processed</div>
+        <div id="kpi-total-chunks" class="kpi-value">0</div>
+        <div class="kpi-sub">Total rolling sessions</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-title">Total Audio Ingested</div>
+        <div id="kpi-total-audio" class="kpi-value">0.0s</div>
+        <div class="kpi-sub">16kHz 16-bit mono PCM</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-title">English Bypass Rate</div>
+        <div id="kpi-bypass-rate" class="kpi-value">0.0%</div>
+        <div id="kpi-bypass-sub" class="kpi-sub">0 requests bypassed LLM</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-title">Boundary Repairs</div>
+        <div id="kpi-repairs-count" class="kpi-value">0</div>
+        <div class="kpi-sub">Sliding-window corrections</div>
+      </div>
+    </section>
+
+    <!-- Latency Gauges and Charts -->
+    <section class="charts-grid">
+      <!-- Whisper Gauge & Sparkline -->
+      <div class="chart-card">
+        <div class="chart-header">
+          <div class="chart-title">Faster-Whisper ASR Latency</div>
+          <div id="whisper-sla-tag" class="badge-status">SLA: &lt;5,000ms</div>
+        </div>
+
+        <div class="gauge-meter-wrapper">
+          <div class="gauge-bar-track">
+            <div id="gauge-whisper-bar" class="gauge-bar-fill green"></div>
+          </div>
+          <div class="gauge-stats-row">
+            <span>Last: <b id="stat-whisper-last">0</b> ms</span>
+            <span>Avg: <b id="stat-whisper-avg">0</b> ms</span>
+            <span>P95: <b id="stat-whisper-p95">0</b> ms</span>
+            <span>Max: <b id="stat-whisper-max">0</b> ms</span>
+          </div>
+        </div>
+
+        <canvas id="chart-whisper-sparkline" class="sparkline-canvas"></canvas>
+      </div>
+
+      <!-- Qwen Gauge & Sparkline -->
+      <div class="chart-card">
+        <div class="chart-header">
+          <div class="chart-title">Qwen 2.5 72B Translation Latency</div>
+          <div id="qwen-sla-tag" class="badge-status">SLA: &lt;8,000ms</div>
+        </div>
+
+        <div class="gauge-meter-wrapper">
+          <div class="gauge-bar-track">
+            <div id="gauge-qwen-bar" class="gauge-bar-fill green"></div>
+          </div>
+          <div class="gauge-stats-row">
+            <span>Last: <b id="stat-qwen-last">0</b> ms</span>
+            <span>Avg: <b id="stat-qwen-avg">0</b> ms</span>
+            <span>P95: <b id="stat-qwen-p95">0</b> ms</span>
+            <span>Max: <b id="stat-qwen-max">0</b> ms</span>
+          </div>
+        </div>
+
+        <canvas id="chart-qwen-sparkline" class="sparkline-canvas"></canvas>
+      </div>
+    </section>
+
+    <!-- 4-Stage Sliding-Window Diff Viewer -->
+    <section class="diff-card">
+      <div class="chart-header">
+        <div class="chart-title">4-Stage Sliding-Window Diff Inspection</div>
+        <div class="kpi-sub" id="diff-latest-chunk-info">Awaiting chunk...</div>
+      </div>
+
+      <div class="stages-grid">
+        <div class="stage-box">
+          <div class="stage-label">Stage 1: Raw Whisper Chunk</div>
+          <div id="stage-raw-text" class="stage-text">—</div>
+        </div>
+
+        <div class="stage-box">
+          <div class="stage-label">Stage 2: Stitched Overlap Text</div>
+          <div id="stage-stitched-text" class="stage-text">—</div>
+        </div>
+
+        <div class="stage-box">
+          <div class="stage-label">Stage 3: Qwen Post-Corrected</div>
+          <div id="stage-corrected-text" class="stage-text">—</div>
+        </div>
+
+        <div class="stage-box">
+          <div class="stage-label">Stage 4: English Translation</div>
+          <div id="stage-translated-text" class="stage-text">—</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live API Interaction Log -->
+    <section class="logs-card">
+      <div class="logs-toolbar">
+        <div class="toolbar-group">
+          <span style="font-weight: 700;">Live API Interaction Log</span>
+          <button id="btn-pause-log" class="btn-action">⏸️ Pause</button>
+          <button id="btn-clear-log" class="btn-action">🗑️ Clear</button>
+          <button id="btn-export-log" class="btn-action">📥 Export JSON</button>
+        </div>
+
+        <div class="toolbar-group">
+          <select id="filter-api-select" class="select-filter">
+            <option value="all">All APIs</option>
+            <option value="whisper">Whisper Only</option>
+            <option value="qwen">Qwen Only</option>
+            <option value="errors">Errors Only</option>
+          </select>
+          <input type="text" id="input-log-search" class="input-search" placeholder="Search logs...">
+        </div>
+      </div>
+
+      <div class="table-container">
+        <table class="log-table">
+          <thead>
+            <tr>
+              <th style="width: 110px;">Time</th>
+              <th style="width: 80px;">Method</th>
+              <th style="width: 140px;">Endpoint</th>
+              <th style="width: 80px;">Status</th>
+              <th style="width: 90px;">Latency</th>
+              <th>Payload Summary</th>
+              <th>Response Summary</th>
+            </tr>
+          </thead>
+          <tbody id="log-table-body">
+            <tr>
+              <td colspan="7" style="text-align: center; color: var(--text-muted); padding: 2rem;">
+                No API interactions recorded yet.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <script src="/static/js/admin.js?v=20260820b"></script>
+</body>
+</html>

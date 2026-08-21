@@ -1,7 +1,0 @@
-
-bash: -c: line 1: syntax error near unexpected token `('
-bash: -c: line 1: `python3 -c import sys with open("/etc/pve/jobs.cfg", "r") as
-f: lines = f.read().split("n") for i, line in enumerate(lines): if line.strip()
-== "storage local": for j in range(i, -1, -1): if lines[j].strip().startswith("p
-rune-backups"): lines[j] = lines[j].replace("keep-last=3", "keep-last=2") break
-with open("/etc/pve/jobs.cfg", "w") as f: f.write("n".join(lines))'

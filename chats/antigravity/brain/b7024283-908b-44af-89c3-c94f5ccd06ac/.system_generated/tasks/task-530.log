@@ -1,9 +1,0 @@
-Traceback (most recent call last):
-  File "<string>", line 5, in <module>
-  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 427, in connect
-    server_key = t.get_remote_server_key()
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3/dist-packages/paramiko/transport.py", line 909, in get_
-remote_server_key
-    raise SSHException("No existing session")
-paramiko.ssh_exception.SSHException: No existing session

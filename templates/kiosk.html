@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Translation Kiosk — Public View</title>
+  <link rel="stylesheet" href="/static/css/kiosk.css">
+</head>
+<body>
+  <div class="kiosk-container">
+    <!-- Header -->
+    <header class="kiosk-header">
+      <div class="brand-section">
+        <span class="brand-icon">🌐</span>
+        <h1 class="brand-title">TRANSLATION KIOSK</h1>
+      </div>
+      <div class="header-controls">
+        <div id="badge-language" class="language-badge">
+          <span id="badge-lang-icon">🌐</span>
+          <span id="badge-lang-text">Auto-Detecting Language</span>
+        </div>
+        <button id="btn-fullscreen" class="btn-fullscreen" title="Toggle Fullscreen">
+          <span>⛶</span> Fullscreen
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Dual Displays -->
+    <main class="main-display">
+      <!-- Left Card: Live Transcription -->
+      <section class="display-card" id="card-transcription">
+        <div class="card-header">
+          <div class="card-title">
+            <span>🗣️</span> Original Speech (Live Transcription)
+          </div>
+          <div class="stream-tag" id="tag-asr-status">ASR Active</div>
+        </div>
+        
+        <div class="text-stream-box" id="transcript-scroll-container">
+          <div id="transcript-content" class="transcript-content">
+            <div class="empty-placeholder" id="placeholder-transcript">
+              <span class="icon">🎙️</span>
+              <p>Touch the button below and speak in any language.</p>
+            </div>
+            <span id="committed-transcript" class="committed-text"></span>
+            <span id="interim-transcript" class="interim-text"></span>
+          </div>
+        </div>
+
+        <div class="visualizer-container">
+          <canvas id="audio-visualizer"></canvas>
+        </div>
+      </section>
+
+      <!-- Right Card: English Translation -->
+      <section class="display-card" id="card-translation">
+        <div class="card-header">
+          <div class="card-title">
+            <span>🇬🇧</span> English Translation
+          </div>
+          <div class="stream-tag" id="tag-translation-mode">Qwen 72B</div>
+        </div>
+
+        <div class="text-stream-box" id="translation-scroll-container">
+          <div class="translation-box" id="translation-content">
+            <div class="empty-placeholder" id="placeholder-translation">
+              <span class="icon">✨</span>
+              <p>Real-time English translation will appear here.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Controls -->
+    <footer class="kiosk-footer">
+      <button id="btn-master" class="btn-control-master idle">
+        <span id="btn-master-icon">🎙️</span>
+        <span id="btn-master-text">Touch to Start Speaking</span>
+      </button>
+
+      <div class="status-bar">
+        <div id="status-message">Ready — Press Start to begin audio translation.</div>
+        <div class="metrics-pills">
+          <div class="metric-pill">Whisper: <span id="metric-whisper">-</span> ms</div>
+          <div class="metric-pill">Qwen: <span id="metric-qwen">-</span> ms</div>
+          <div class="metric-pill">Total: <span id="metric-e2e">-</span> ms</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/static/js/kiosk.js?v=20260820b"></script>
+</body>
+</html>

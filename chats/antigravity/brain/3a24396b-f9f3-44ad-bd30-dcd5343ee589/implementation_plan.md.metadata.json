@@ -1,7 +1,0 @@
-{
-  "artifactType":  "ARTIFACT_TYPE_IMPLEMENTATION_PLAN",
-  "summary":  "Comprehensive optimization plan for Zorin OS covering sysctl tuning, boot speed, service cleanup, btrfs optimizations, GRUB improvements, and TLP refinements.",
-  "updatedAt":  "2026-04-25T16:53:40.413323607Z",
-  "version":  "2",
-  "requestFeedback":  true
-}

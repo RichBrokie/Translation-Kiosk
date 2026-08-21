@@ -1,7 +1,0 @@
-- [x] Write Python script (`clean_vendors.py`) to handle anomaly cleanup
-  - [x] Implement Name Formatting (Title Case, trim spaces)
-  - [x] Implement Misplaced Data rules (move emails and phones from Vendor Name)
-  - [x] Implement Contact Number Standardization
-- [x] Run `clean_vendors.py` on `Compiled_Vendors.xlsx`
-- [x] Verify the anomalies are fixed
-- [x] Create walkthrough artifact

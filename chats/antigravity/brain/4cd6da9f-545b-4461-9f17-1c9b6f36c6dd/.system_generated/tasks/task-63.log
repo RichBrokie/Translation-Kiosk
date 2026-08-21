@@ -1,9 +1,0 @@
-
----
-total 20
--rw-r--r-- 1 root root  559 Aug  8 00:05 lxc-103.log
--rw-r--r-- 1 root root 1040 Aug  8 00:05 lxc-102.log
--rw-r--r-- 1 root root 1036 Aug  8 00:05 lxc-101.log
--rw-r--r-- 1 root root 6300 Aug  8 00:03 qemu-100.log
----
-grep: /var/log/syslog: No such file or directory

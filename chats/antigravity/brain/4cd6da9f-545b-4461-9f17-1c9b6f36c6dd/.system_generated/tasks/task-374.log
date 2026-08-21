@@ -1,7 +1,0 @@
-
-removing backup 'local:backup/vzdump-lxc-101-2026_08_06-00_02_04.tar.zst'
-removing backup 'local:backup/vzdump-lxc-102-2026_08_06-00_03_22.tar.zst'
-removing backup 'local:backup/vzdump-lxc-103-2026_07_05-00_05_03.tar.zst'
-removing backup 'local:backup/vzdump-qemu-100-2026_08_06-00_00_00.vma.zst'
-Filesystem            Size  Used Avail Use% Mounted on
-/dev/mapper/pve-root   68G   31G   34G  48% /

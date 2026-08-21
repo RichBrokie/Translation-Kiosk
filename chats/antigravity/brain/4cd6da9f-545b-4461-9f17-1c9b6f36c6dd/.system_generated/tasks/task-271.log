@@ -1,6 +1,0 @@
-
-Warning: inverse host lookup failed for 136.143.182.56: Unknown host
----
-smtp.zoho.com [136.143.182.56] 587 (submission) : Connection timed out
-Warning: inverse host lookup failed for 136.143.182.56: Unknown host
-smtp.zoho.com [136.143.182.56] 465 (submissions) open

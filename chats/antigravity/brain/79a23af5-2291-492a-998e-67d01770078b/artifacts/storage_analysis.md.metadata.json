@@ -1,5 +1,0 @@
-{
-  "summary":  "Detailed storage analysis and actions taken on the Proxmox server, showing that the 100% disk utilization has been resolved by cleaning up old backups, vacuuming logs, and adjusting backup jobs to use daily schedules and keep-last=3 retention. Disk usage is now down to 60% (26GB free).",
-  "updatedAt":  "2026-05-30T20:31:00.041290258Z",
-  "version":  "1"
-}

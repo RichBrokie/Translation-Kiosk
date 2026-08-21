@@ -1,5 +1,0 @@
-- [ ] Update `auto-animations.sh` to pause user services on battery
-  - [ ] Add `systemctl --user stop` logic for OneDrive, Tracker, and Evolution
-  - [ ] Add `systemctl --user start` logic for OneDrive, Tracker, and Evolution when on AC
-- [ ] Restart the background script to apply changes
-- [ ] Verify script syntax and execution

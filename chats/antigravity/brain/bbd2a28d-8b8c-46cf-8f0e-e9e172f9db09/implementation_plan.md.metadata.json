@@ -1,6 +1,0 @@
-{
-  "artifactType":  "ARTIFACT_TYPE_IMPLEMENTATION_PLAN",
-  "summary":  "A plan to install and configure Weylus to allow extending the laptop screen to an iPad with full Apple Pencil support, including the setup of necessary system permissions and workarounds for GNOME Wayland virtual monitors.",
-  "updatedAt":  "2026-05-08T16:21:24.594182863Z",
-  "requestFeedback":  true
-}

@@ -1,7 +1,0 @@
-Restarted: wyoming-wyze-camera
-Status: INFO:root:Connected to services
-INFO:root:Streaming audio
-WARNING:root:Event(type='error', data={'text': 'No text recognized', 'code': 'st
-t-no-text-recognized'}, payload=None)
-INFO:root:Ready
-INFO:root:Connected to services

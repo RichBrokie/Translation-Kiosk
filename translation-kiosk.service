@@ -1,0 +1,34 @@
+[Unit]
+Description=Translation Kiosk Web Application and Real-Time Audio Pipeline
+Documentation=https://github.com/translation-kiosk
+After=network.target vllm.service audio-kiosk.service
+Wants=vllm.service audio-kiosk.service
+
+[Service]
+Type=simple
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu/translation_kiosk
+Environment="PATH=/home/ubuntu/ai_kiosk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+Environment="PYTHONUNBUFFERED=1"
+Environment="HOST=0.0.0.0"
+Environment="PORT=8080"
+Environment="WHISPER_URL=http://localhost:8001/transcribe"
+Environment="VLLM_URL=http://localhost:8000/v1/chat/completions"
+Environment="QWEN_MODEL=/mnt/models/qwen2.5-72b-instruct-awq"
+Environment="CHUNK_DURATION=4.0"
+Environment="OVERLAP_DURATION=2.0"
+
+ExecStart=/home/ubuntu/ai_kiosk/bin/python /home/ubuntu/translation_kiosk/main.py
+Restart=always
+RestartSec=3s
+KillMode=mixed
+TimeoutStopSec=10s
+LimitNOFILE=65536
+
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=translation-kiosk
+
+[Install]
+WantedBy=multi-user.target

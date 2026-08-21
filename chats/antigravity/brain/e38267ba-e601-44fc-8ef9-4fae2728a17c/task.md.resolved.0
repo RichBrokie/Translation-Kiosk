@@ -1,4 +1,0 @@
-- `[/]` Patch `fs/graph/oauth2.go` to use the new Client ID and Redirect URL.
-- `[ ]` Patch `fs/graph/oauth2_gtk.c` to use the new hardcoded Redirect URL.
-- `[ ]` Build the custom `onedriver` executable.
-- `[ ]` Verify the build completes successfully and provide instructions.
